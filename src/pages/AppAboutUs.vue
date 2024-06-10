@@ -1,9 +1,9 @@
 <script>
 export default {
-  name: "AppContactPage"
+  name: "AppAboutUs"
 }
 </script>
 <template>
-  <h2>Contact</h2>
+  <h2>About us</h2>
 </template>
 <style scoped lang="scss"></style>

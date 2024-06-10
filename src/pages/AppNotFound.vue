@@ -1,9 +1,9 @@
 <script>
 export default {
-  name: "AppContactPage"
+  name: "AppNotFound"
 }
 </script>
 <template>
-  <h2>Contact</h2>
+  Non trovato
 </template>
 <style scoped lang="scss"></style>
