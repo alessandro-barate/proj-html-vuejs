@@ -1,22 +1,27 @@
 <script>
 export default {
-  name: "AppHeader"
-}
+  name: "AppHeader",
+};
 </script>
 <template>
-  <ul>
-    <li>
-      <router-link :to="{ name: Homepage }" class="">
-        Homepage
-      </router-link>
-      <router-link :to="{ name: AppAboutUs }" class="">
-        About Us
-      </router-link>
-      <router-link :to="{ name: AppContactPage }" class="">
-        Contacts
-      </router-link>
-    </li>
-  </ul>
-  Header
+  <header>
+    <ul>
+      <li>
+        <router-link :to="{ name: 'Contact' }" class="classe_css">
+          Contact
+        </router-link>
+      </li>
+      <li>
+        <router-link :to="{ name: 'Home' }" class="classe_css">
+          home
+        </router-link>
+      </li>
+      <li>
+        <router-link :to="{ name: 'AboutUs' }" class="classe_css">
+          About Us
+        </router-link>
+      </li>
+    </ul>
+  </header>
 </template>
 <style scoped lang="scss"></style>

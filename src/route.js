@@ -4,6 +4,7 @@ import AppHomepage from "./pages/AppHomepage.vue";
 import AppContactPage from "./pages/AppContactPage.vue";
 import AppAboutUs from "./pages/AppAboutUs.vue";
 import AppNotFound from "./pages/AppNotFound.vue";
+
 const router = createRouter({
   history: createWebHistory(),
   routes: [
@@ -19,7 +20,7 @@ const router = createRouter({
     },
     {
       path: "/about",
-      name: "About us",
+      name: "AboutUs",
       component: AppAboutUs,
     },
     {

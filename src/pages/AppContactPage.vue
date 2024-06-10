@@ -1,7 +1,7 @@
 <script>
 export default {
-  name: "AppContactPage"
-}
+  name: "AppContactPage",
+};
 </script>
 <template>
   <h2>Contact</h2>
