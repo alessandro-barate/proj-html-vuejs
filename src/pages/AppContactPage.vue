@@ -40,16 +40,30 @@ export default {
       <div class="col-6">
         <h3>Reach us directly!</h3>
         <ul>
-          <li>
-            <div>
-              <img src="../../public/img/footer/" alt="">
+          <li class="d-flex">
+            <div class="contact-symbol pt-21">
+              <img id="width-40" src="../../public/img/footer/map.png" alt="">
             </div>
             <a href="">
-              <span>Address</span>2464 Royal Ln. Mesa, New Jersey 45463
+              <h5>Address</h5>2464 Royal Ln. Mesa, New Jersey 45463
             </a>
           </li>
-          <li>b</li>
-          <li>c</li>
+          <li class="d-flex">
+            <div class="contact-symbol pt-30">
+              <img src="../../public/img/footer/email.png" alt="">
+            </div>
+            <a href="">
+              <h5>Email</h5>example@gmail.com
+            </a>
+          </li>
+          <li class="d-flex">
+            <div class="contact-symbol pt-25">
+              <img src="../../public/img/footer/phone.png" alt="">
+            </div>
+            <a href="">
+              <h5>Phone</h5>(406) 555-0120
+            </a>
+          </li>
         </ul>
       </div>
 
@@ -94,8 +108,53 @@ h5 {
   list-style: none;
 }
 
+ul a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+ul li {
+  width: 75%;
+  background-color: white;
+  padding: 10px 0 10px 20px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  border: 1px solid #E2DAFA;
+
+}
+
 .bg-lightpink {
   background-color: #F6E9FC;
+}
+
+.contact-symbol {
+  width: 100px;
+  height: 100px;
+  background-color: #EBE5FF;
+  margin-right: 15px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.contact-symbol img {
+  width: 50%;
+}
+
+.pt-21 {
+  padding-top: 21px;
+}
+
+.pt-25 {
+  padding-top: 25px;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
+#width-40 {
+  width: 40%;
 }
 
 </style>
