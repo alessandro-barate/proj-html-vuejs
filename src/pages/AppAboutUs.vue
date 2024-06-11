@@ -16,6 +16,7 @@ export default {
     jumbotronComponent,
     counterComp,
   },
+  methods: {},
 };
 </script>
 <template>

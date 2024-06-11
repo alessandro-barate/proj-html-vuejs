@@ -1,16 +1,19 @@
 <script>
 export default {
   name: "AppHeader",
+  data() {
+    return {};
+  },
   props: {},
 };
 </script>
 <template>
-  <header class="py-3 bg-transparent position-fixed z-3 start-0 end-0">
+  <header class="py-3 bg-invisible position-fixed z-3 start-0 end-0">
     <nav class="navbar">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img
-            src="../../public/img/logo.png"
+            src="/img/logo.png"
             alt="Logo"
             width="100px"
             class="d-inline-block align-text-top"
@@ -59,7 +62,10 @@ export default {
   </header>
 </template>
 <style scoped lang="scss">
-.bg-header-color {
+.bg-invisible {
+  background-color: transparent;
+}
+.bg-invisible.bgheadercolor {
   background-color: #260262;
 }
 .linkheader {
@@ -70,4 +76,3 @@ export default {
   }
 }
 </style>
-// Portfolio Our Process Pricing Blog
