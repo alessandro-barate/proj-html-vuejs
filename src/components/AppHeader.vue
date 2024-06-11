@@ -27,19 +27,28 @@ export default {
               About Us
             </router-link>
           </li>
+
           <li class="mx-3 nav-item">
-            <router-link :to="{ name: 'Contact' }" class="fw-bold linkheader">
-              Contact
+            <router-link :to="{ name: 'Portfolio' }" class="fw-bold linkheader">
+              Portfolio
             </router-link>
           </li>
           <li class="mx-3 nav-item">
-            <router-link :to="{ name: 'Home' }" class="fw-bold linkheader">
-              Home
+            <router-link
+              :to="{ name: 'OurProcess' }"
+              class="fw-bold linkheader"
+            >
+              Our Process
             </router-link>
           </li>
           <li class="mx-3 nav-item">
-            <router-link :to="{ name: 'AboutUs' }" class="fw-bold linkheader">
-              About Us
+            <router-link :to="{ name: 'Pricing' }" class="fw-bold linkheader">
+              Pricing
+            </router-link>
+          </li>
+          <li class="mx-3 nav-item">
+            <router-link :to="{ name: 'Blog' }" class="fw-bold linkheader">
+              Blog
             </router-link>
           </li>
           <li class="mx-3 nav-item">
@@ -64,3 +73,4 @@ export default {
   }
 }
 </style>
+// Portfolio Our Process Pricing Blog
