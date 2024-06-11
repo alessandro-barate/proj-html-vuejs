@@ -7,13 +7,23 @@ export default {
   <div class="container-fluid position-relative">
     <div class="container">
       <div class="row">
-        <div class="col-7 offset-3">
-          <div class="content text-center text-white">
-            <h4>Our Love For Animation</h4>
-            <h2 class="text-purple">We're Storytelling Experts <br>With Creative Smarts</h2>
-            <p class="text-purple">Our culture inspires the creative and innovative spirit found throughout our
-              <br>Studio. We breathe life into new ideas!
-            </p>
+        <!-- OFFSET PER IMMAGINE -->
+        <div class="col-9 offset-3">
+          <div class="position-relative z-index">
+            <div class="row">
+              <div class="col-9">
+                <div class="content text-center text-white">
+                  <h4>Our Love For Animation</h4>
+                  <h2 class="text-purple">We're Storytelling Experts <br>With Creative Smarts</h2>
+                  <p class="text-purple">Our culture inspires the creative and innovative spirit found throughout our
+                    <br>Studio. We breathe life into new ideas!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              sa
+            </div>
           </div>
         </div>
       </div>
@@ -27,6 +37,10 @@ export default {
 .position-relative {
   position: relative;
   padding: 100px 0;
+}
+
+.z-index {
+  z-index: 1;
 }
 
 h4 {

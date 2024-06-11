@@ -13,7 +13,7 @@ export default {
             <h1 class="page-title">We Animate <br>With Ninja-Like Precision</h1>
             <h4>We are a character-driven animation studio striving to make high-quality animations.</h4>
             <div class="banner py-5">
-              <button type="button" class="btn btn-light rounded-pill me-3">Start a project</button>
+              <button type="button" class="btn btn-light rounded-pill me-3">Start a Project</button>
               <button type="button" class="btn btn-dark rounded-pill me-5">Portfolio</button>
             </div>
           </div>
@@ -42,5 +42,10 @@ export default {
 
 .page-title {
   font-size: 5rem;
+}
+
+button {
+  font-size: 18px;
+  padding: 12px 38px;
 }
 </style>
