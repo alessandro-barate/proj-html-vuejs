@@ -29,25 +29,22 @@ export default {
           </li>
 
           <li class="mx-3 nav-item">
-            <router-link :to="{ name: 'Portfolio' }" class="fw-bold linkheader">
+            <router-link :to="{ name: '' }" class="fw-bold linkheader">
               Portfolio
             </router-link>
           </li>
           <li class="mx-3 nav-item">
-            <router-link
-              :to="{ name: 'OurProcess' }"
-              class="fw-bold linkheader"
-            >
+            <router-link :to="{ name: '' }" class="fw-bold linkheader">
               Our Process
             </router-link>
           </li>
           <li class="mx-3 nav-item">
-            <router-link :to="{ name: 'Pricing' }" class="fw-bold linkheader">
+            <router-link :to="{ name: '' }" class="fw-bold linkheader">
               Pricing
             </router-link>
           </li>
           <li class="mx-3 nav-item">
-            <router-link :to="{ name: 'Blog' }" class="fw-bold linkheader">
+            <router-link :to="{ name: '' }" class="fw-bold linkheader">
               Blog
             </router-link>
           </li>
