@@ -117,16 +117,23 @@ export default {
     </div>
   </section>
 
-  <section>
-    <div class="container">
-      <div class="row">
-        <img src="" alt="">
-        <div class="col wrapper text-center">
-          <h5>We Create New Worlds!</h5>
-          <h2>Want Tips On Your Storytelling?</h2>
-          <p>Join our newsletter for tips on how to elevate your brand through storytelling</p>
+  <section class="margin-bt">
+    <div class="jumbo-background">
+      <img class="p-0" src="../../public/img/footer/shape-top-violet.png" alt="">
+      <div class="container pt-5">
+        <div class="row">     
+          <div class="col text-center">
+            <h5 class="text-orange">We Create New Worlds!</h5>
+            <h2 class="width-60 mx-auto my-3 text-white">Want Tips On Your Storytelling?</h2>
+            <p class="mb-5 text-white">Join our newsletter for tips on how to elevate your brand through storytelling</p>
+          </div>
+          <form class="input-wrapper">
+            <input type="email" class="form-control p-4 border-radius width-60 mx-auto" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
+            <button type="submit" class="border-radius">Submit</button>
+          </form>
         </div>
       </div>
+      <img class="p-0" src="../../public/img/footer/shape-bottom-violet.png" alt="">
     </div>
   </section>
 </template>
@@ -189,6 +196,14 @@ ul a {
   background-color: #F6E9FC;
 }
 
+.text-orange {
+  color: #FF791F;
+}
+
+.text-white {
+  color: white;
+}
+
 .contact-symbol {
   width: 100px;
   height: 100px;
@@ -223,8 +238,8 @@ ul a {
   width: 40%;
 }
 
-.width-105 {
-  width: 105%;
+.width-60 {
+  width: 60%;
 }
 
 .left-side {
@@ -273,6 +288,10 @@ form label {
   border-radius: 10px;
 }
 
+.border-radius {
+  border-radius: 50px;
+}
+
 textarea {
   height: 150px;
 }
@@ -281,9 +300,30 @@ textarea {
   margin-bottom: 80px;
 }
 
-.wrapper {
-  width: 60%;
-  background-color: red;
+.input-wrapper {
+  margin-bottom: 90px;
+  position: relative;
+
+  button {
+    background-color: #FFDFEC;
+    padding: 12px 30px 12px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    position: absolute;
+    right: 284px;
+    bottom: 12px;
+  }
+  
+}
+
+.jumbo-background {
+  background-image: url(../../public/img/jumbobackground.png);
+}
+
+.margin-bt {
+  margin-top: 60px;
+  margin-bottom: 90px;
 }
 
 </style>
