@@ -17,46 +17,48 @@ export default {
     />
 
     <h2 class="counter-title">Anidio Quick Facts</h2>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 m-auto">
-      <div class="col">
-        <div
-          class="card z-2 rounded-4 border-white bg-transparent text-center py-5"
-        >
-          <div class="counterNumber">
-            <h2>700+</h2>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 m-auto">
+        <div class="col">
+          <div
+            class="card z-2 rounded-4 border-white bg-transparent text-center py-5"
+          >
+            <div class="counterNumber">
+              <h2>700+</h2>
+            </div>
+            <div class="counterText text-warning"><h4>Projects done</h4></div>
           </div>
-          <div class="counterText text-warning"><h4>Projects done</h4></div>
         </div>
-      </div>
-      <div class="col">
-        <div
-          class="card z-2 rounded-4 border-white bg-transparent text-center py-5"
-        >
-          <div class="counterNumber">
-            <h2>250+</h2>
+        <div class="col">
+          <div
+            class="card z-2 rounded-4 border-white bg-transparent text-center py-5"
+          >
+            <div class="counterNumber">
+              <h2>250+</h2>
+            </div>
+            <div class="counterText text-warning"><h4>Happy Clients</h4></div>
           </div>
-          <div class="counterText text-warning"><h4>Happy Clients</h4></div>
         </div>
-      </div>
-      <div class="col">
-        <div
-          class="card z-2 rounded-4 border-white bg-transparent text-center py-5"
-        >
-          <div class="counterNumber">
-            <h2>25+</h2>
+        <div class="col">
+          <div
+            class="card z-2 rounded-4 border-white bg-transparent text-center py-5"
+          >
+            <div class="counterNumber">
+              <h2>25+</h2>
+            </div>
+            <div class="counterText text-warning"><h4>Team Member</h4></div>
           </div>
-          <div class="counterText text-warning"><h4>Team Member</h4></div>
         </div>
-      </div>
-      <div class="col">
-        <div
-          class="card z-2 rounded-4 border-white bg-transparent text-center py-5"
-        >
-          <div class="counterNumber">
-            <h2>12+</h2>
-          </div>
-          <div class="counterText text-warning">
-            <h4>Years on the market</h4>
+        <div class="col">
+          <div
+            class="card z-2 rounded-4 border-white bg-transparent text-center py-5"
+          >
+            <div class="counterNumber">
+              <h2>12+</h2>
+            </div>
+            <div class="counterText text-warning">
+              <h4>Years on the market</h4>
+            </div>
           </div>
         </div>
       </div>
