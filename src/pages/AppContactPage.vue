@@ -118,7 +118,15 @@ export default {
   </section>
 
   <section>
-
+    <div class="container">
+      <div class="row">
+        <div class="col wrapper text-center">
+          <h5>We Create New Worlds!</h5>
+          <h2>Want Tips On Your Storytelling?</h2>
+          <p>Join our newsletter for tips on how to elevate your brand through storytelling</p>
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -270,6 +278,11 @@ textarea {
 
 .right-side {
   margin-bottom: 80px;
+}
+
+.wrapper {
+  width: 60%;
+  background-color: red;
 }
 
 </style>
