@@ -4,6 +4,6 @@ export default {
 }
 </script>
 <template>
-  Non trovato
+  <h2>Page not found</h2>
 </template>
 <style scoped lang="scss"></style>
