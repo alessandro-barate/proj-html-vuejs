@@ -7,6 +7,6 @@ export default {
 };
 </script>
 <template>
-  <h2>{{ title1 }}</h2>
+  <h1>app about us</h1>
 </template>
 <style scoped lang="scss"></style>
