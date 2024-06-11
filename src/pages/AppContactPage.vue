@@ -39,7 +39,7 @@ export default {
     <div class="row bg-lightpink">
       <div class="col-6 left-side">
         <h3>Reach us directly!</h3>
-        <ul>
+        <ul class="main-list">
           <li class="d-flex">
             <div class="contact-symbol pt-21">
               <img id="width-40" src="../../public/img/footer/map.png" alt="">
@@ -65,6 +65,19 @@ export default {
             </a>
           </li>
         </ul>
+
+        <hr>
+
+        <div class="socials-button">
+          <h5>Follow us</h5>
+          <ul class="list-group list-group-horizontal">
+            <li class="list-group-item">Fontawesome FB</li>
+            <li class="list-group-item">Fontawesome IG</li>
+            <li class="list-group-item">Fontawesome TW</li>
+            <li class="list-group-item">Fontawesome WA</li>
+          </ul>
+        </div>
+
       </div>
 
       <div class="col-6">
@@ -73,7 +86,7 @@ export default {
         
           <div class="text-center">
             <h2>Contact form</h2>
-            <p>Tell us your story and let's make it awesome</p>
+            <p >Tell us your story and let's make it awesome</p>
           </div>
         
           <form>
@@ -109,10 +122,6 @@ export default {
 .reach-us {
   width: 50%;
   margin-top: 80px;
-
-  p {
-    font-size: 18px;
-  }
 }
 
 h2 {
@@ -133,6 +142,10 @@ h5 {
   font-weight: bold;
 }
 
+p {
+    font-size: 18px;
+}
+
 .col-6 ul {
   list-style: none;
 }
@@ -143,8 +156,8 @@ ul a {
   color: black;
 }
 
-ul li {
-  width: 75%;
+.main-list li {
+  width: 90%;
   background-color: white;
   padding: 10px 0 10px 20px;
   margin-bottom: 25px;
@@ -188,6 +201,25 @@ ul li {
 
 .left-side {
   font-weight: bold;
+  padding-top: 200px;
+
+  hr {
+    width: 86%;
+    margin-left: 30px;
+  }
+
+  h3 {
+    margin-left: 30px;
+  }
+}
+
+.form-container {
+  background-color: #F7F0FE;
+}
+
+.socials-button li {
+  background-color: transparent;
+  border: none;
 }
 
 </style>
