@@ -5,9 +5,9 @@ export default {
 };
 </script>
 <template>
-  <header class="py-3 bg-header-color">
+  <header class="py-3 bg-transparent position-fixed z-3 start-0 end-0">
     <nav class="navbar">
-      <div class="container-fluid">
+      <div class="container">
         <a class="navbar-brand" href="#">
           <img
             src="../../public/img/logo.png"
