@@ -120,6 +120,7 @@ export default {
   <section>
     <div class="container">
       <div class="row">
+        <img src="../../public/img/footer/" alt="">
         <div class="col wrapper text-center">
           <h5>We Create New Worlds!</h5>
           <h2>Want Tips On Your Storytelling?</h2>
