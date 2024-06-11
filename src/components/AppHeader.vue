@@ -1,6 +1,7 @@
 <script>
 export default {
   name: "AppHeader",
+  props: {},
 };
 </script>
 <template>
