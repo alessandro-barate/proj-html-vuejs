@@ -9,7 +9,7 @@ export default {
       <router-link :to="{ name: 'Home' }" class="">
         Homepage
       </router-link>
-      <router-link :to="{ name }" class="">
+      <router-link :to="{ name: 'AboutUs' }" class="">
         About Us
       </router-link>
       <router-link :to="{ name: 'Contact' }" class="">
