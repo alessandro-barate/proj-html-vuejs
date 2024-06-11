@@ -40,7 +40,14 @@ export default {
       <div class="col-6">
         <h3>Reach us directly!</h3>
         <ul>
-          <li>a</li>
+          <li>
+            <div>
+              <img src="../../public/img/footer/" alt="">
+            </div>
+            <a href="">
+              <span>Address</span>2464 Royal Ln. Mesa, New Jersey 45463
+            </a>
+          </li>
           <li>b</li>
           <li>c</li>
         </ul>
@@ -70,13 +77,21 @@ export default {
   }
 }
 
+h2 {
+  font-size: 57px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 43px;
+}
+
 h5 {
   font-size: 24px;
 }
 
-h2 {
-  font-size: 57px;
-  font-weight: 700;
+.col-6 ul {
+  list-style: none;
 }
 
 .bg-lightpink {
