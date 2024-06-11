@@ -1,6 +1,7 @@
 <script>
 import jumbotronComponent from "../components/jumbotronAboutUs.vue";
 import counterComp from "../components/countercomp.vue";
+import ourServicecomp from "../components/ourServicecomp.vue";
 export default {
   name: "AppAboutUs",
   data() {
@@ -15,6 +16,7 @@ export default {
   components: {
     jumbotronComponent,
     counterComp,
+    ourServicecomp,
   },
   methods: {},
 };
@@ -22,5 +24,6 @@ export default {
 <template>
   <jumbotronComponent :title="Pagename" :Image="jumboImg"></jumbotronComponent>
   <counterComp></counterComp>
+  <ourServicecomp></ourServicecomp>
 </template>
 <style scoped lang="scss"></style>
