@@ -82,7 +82,7 @@ export default {
 
       <div class="col-6">
 
-        <div class="form-container">
+        <div class="form-container p-4">
         
           <div class="text-center">
             <h2>Contact form</h2>
@@ -174,7 +174,7 @@ ul a {
   width: 100px;
   height: 100px;
   background-color: #EBE5FF;
-  margin-right: 15px;
+  margin-right: 20px;
   border-radius: 50%;
   text-align: center;
 }
@@ -215,11 +215,25 @@ ul a {
 
 .form-container {
   background-color: #F7F0FE;
+  margin: 80px 30px 0 0;
+  border-radius: 30px;
+  border: 1px solid #B8AACA;
+
+  button {
+    width: 100%;
+    border-radius: 50px;
+    padding: 10px 0 10px 0;
+  }
+}
+
+.socials-button {
+  margin-left: 30px;
 }
 
 .socials-button li {
   background-color: transparent;
   border: none;
+  margin-left: -20px;
 }
 
 </style>
