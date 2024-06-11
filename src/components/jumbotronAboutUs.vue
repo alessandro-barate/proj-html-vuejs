@@ -71,9 +71,6 @@ export default {
   background-image: url(/img/jumbobackground.png);
   background-position: center;
 
-  .waveimage {
-    width: 100%;
-  }
   .globe1 {
     position: absolute;
     top: 12%;
