@@ -1,9 +1,17 @@
 <script>
+import JumboHome from '../components/JumboHome.vue'
 export default {
   name: "AppHomepage",
+  components: {
+    JumboHome,
+  }
 };
 </script>
 <template>
-  <h1>AppHomepage</h1>
+  <JumboHome></JumboHome>
 </template>
-<style scoped></style>
+<style scoped lang="scss">
+.page-title {
+  font-size: 5rem;
+}
+</style>
