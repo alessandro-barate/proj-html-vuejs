@@ -34,90 +34,92 @@ export default {
     <p class="px-5">We're always interested in having a chat or discussing your next big project, so drop us a line!</p>
   </div>
 
-  <div class="container form-contacts">
-    <img class="bg-lightpink" src="../../public/img/footer/shape-top.png" alt="">
-    <div class="row bg-lightpink">
-      <div class="col-6 left-side">
-        <h3>Reach us directly!</h3>
-        <ul class="main-list">
-          <li class="d-flex">
-            <div class="contact-symbol pt-21">
-              <img id="width-40" src="../../public/img/footer/map.png" alt="">
-            </div>
-            <a href="">
-              <h5>Address</h5>2464 Royal Ln. Mesa, New Jersey 45463
-            </a>
-          </li>
-          <li class="d-flex">
-            <div class="contact-symbol pt-30">
-              <img src="../../public/img/footer/email.png" alt="">
-            </div>
-            <a href="">
-              <h5>Email</h5>example@gmail.com
-            </a>
-          </li>
-          <li class="d-flex">
-            <div class="contact-symbol pt-25">
-              <img src="../../public/img/footer/phone.png" alt="">
-            </div>
-            <a href="">
-              <h5>Phone</h5>(406) 555-0120
-            </a>
-          </li>
-        </ul>
-
-        <hr>
-
-        <div class="socials-button">
-          <h5>Follow us</h5>
-          <ul class="list-group list-group-horizontal">
-            <li class="list-group-item">Fontawesome FB</li>
-            <li class="list-group-item">Fontawesome IG</li>
-            <li class="list-group-item">Fontawesome TW</li>
-            <li class="list-group-item">Fontawesome WA</li>
+  <section>
+    <div class="container form-contacts"> 
+      <div class="row bg-lightpink">
+        <img class="bg-lightpink p-0" src="../../public/img/footer/shape-top.png" alt="">
+        <div class="col-6 left-side">
+          <h3>Reach us directly!</h3>
+          <ul class="main-list">
+            <li class="d-flex">
+              <div class="contact-symbol pt-21">
+                <img id="width-40" src="../../public/img/footer/map.png" alt="">
+              </div>
+              <a href="">
+                <h5>Address</h5>2464 Royal Ln. Mesa, New Jersey 45463
+              </a>
+            </li>
+            <li class="d-flex">
+              <div class="contact-symbol pt-30">
+                <img src="../../public/img/footer/email.png" alt="">
+              </div>
+              <a href="">
+                <h5>Email</h5>example@gmail.com
+              </a>
+            </li>
+            <li class="d-flex">
+              <div class="contact-symbol pt-25">
+                <img src="../../public/img/footer/phone.png" alt="">
+              </div>
+              <a href="">
+                <h5>Phone</h5>(406) 555-0120
+              </a>
+            </li>
           </ul>
-        </div>
 
-      </div>
+          <hr>
 
-      <div class="col-6">
-
-        <div class="form-container p-4">
-        
-          <div class="text-center">
-            <h2>Contact form</h2>
-            <p class="mb-4">Tell us your story and let's make it awesome</p>
+          <div class="socials-button">
+            <h5>Follow us</h5>
+            <ul class="list-group list-group-horizontal">
+              <li class="list-group-item">Fontawesome FB</li>
+              <li class="list-group-item">Fontawesome IG</li>
+              <li class="list-group-item">Fontawesome TW</li>
+              <li class="list-group-item">Fontawesome WA</li>
+            </ul>
           </div>
-        
-          <form>
-            <div class="mb-4">
-              <label for="exampleInputText1" class="form-label">NAME</label>
-              <input type="text" class="form-control p-tb-12 border-radius-10" id="exampleInputText1" placeholder="What's your name?">
-            </div>
-
-            <div class="mb-4">
-              <label for="exampleInputEmail1" class="form-label">EMAIL</label>
-              <input type="email" class="form-control p-tb-12 border-radius-10" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="What's your email?">
-            </div>
-
-            <div class="mb-4">
-              <label for="exampleInputNumber1" class="form-label">NUMBER</label>
-              <input type="number" class="form-control p-tb-12 border-radius-10" id="exampleInputNumber1" aria-describedby="emailHelp" placeholder="Your number">
-            </div>
-
-            <div class="mb-5">
-              <label for="exampleFormControlTextarea1" class="form-label">LEAVE A MESSAGE</label>
-              <textarea class="form-control p-tb-12 border-radius-10" id="exampleFormControlTextarea1" rows="3" placeholder="Please type your message here..."></textarea>
-            </div>
-
-            
-
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
         </div>
-      </div>
+
+        <div class="col-6 right-side">
+          <div class="form-container p-4">      
+            <div class="text-center">
+              <h2>Contact form</h2>
+              <p class="mb-4">Tell us your story and let's make it awesome</p>
+            </div>
+        
+            <form>
+              <div class="mb-4">
+                <label for="exampleInputText1" class="form-label">NAME</label>
+                <input type="text" class="form-control p-tb-12 border-radius-10" id="exampleInputText1" placeholder="What's your name?">
+              </div>
+
+              <div class="mb-4">
+                <label for="exampleInputEmail1" class="form-label">EMAIL</label>
+                <input type="email" class="form-control p-tb-12 border-radius-10" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="What's your email?">
+              </div>
+
+              <div class="mb-4">
+                <label for="exampleInputNumber1" class="form-label">NUMBER</label>
+                <input type="number" class="form-control p-tb-12 border-radius-10" id="exampleInputNumber1" aria-describedby="emailHelp" placeholder="Your number">
+              </div>
+
+              <div class="mb-5">
+                <label for="exampleFormControlTextarea1" class="form-label">LEAVE A MESSAGE</label>
+                <textarea class="form-control p-tb-12 border-radius-10" id="exampleFormControlTextarea1" rows="3" placeholder="Please type your message here..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+        <img src="../../public/img/footer/shape-bottom.png" class="bg-lightpink p-0" alt="">
+      </div> 
     </div>
-  </div>
+  </section>
+
+  <section>
+
+  </section>
 </template>
 
 
@@ -129,6 +131,7 @@ export default {
 .reach-us {
   width: 50%;
   margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 h2 {
@@ -211,9 +214,13 @@ ul a {
   width: 40%;
 }
 
+.width-105 {
+  width: 105%;
+}
+
 .left-side {
   font-weight: bold;
-  padding-top: 200px;
+  padding-top: 160px;
 
   hr {
     width: 86%;
@@ -259,6 +266,10 @@ form label {
 
 textarea {
   height: 150px;
+}
+
+.right-side {
+  margin-bottom: 80px;
 }
 
 </style>
