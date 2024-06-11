@@ -28,6 +28,7 @@ export default {
 <style scoped lang="scss">
 .container-fluid {
   background-image: url(/img/homepage/banner-bg.png);
+  padding-top: 100px;
 }
 
 .text-orange {
