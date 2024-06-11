@@ -86,24 +86,31 @@ export default {
         
           <div class="text-center">
             <h2>Contact form</h2>
-            <p >Tell us your story and let's make it awesome</p>
+            <p class="mb-4">Tell us your story and let's make it awesome</p>
           </div>
         
           <form>
-            <div class="mb-3">
-              <label for="exampleInputText1" class="form-label">s</label>
-              <input type="text" class="form-control" id="exampleInputText1">
+            <div class="mb-4">
+              <label for="exampleInputText1" class="form-label">NAME</label>
+              <input type="text" class="form-control p-tb-12 border-radius-10" id="exampleInputText1" placeholder="What's your name?">
             </div>
 
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div class="mb-4">
+              <label for="exampleInputEmail1" class="form-label">EMAIL</label>
+              <input type="email" class="form-control p-tb-12 border-radius-10" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="What's your email?">
             </div>
 
-            <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <div class="mb-4">
+              <label for="exampleInputNumber1" class="form-label">NUMBER</label>
+              <input type="number" class="form-control p-tb-12 border-radius-10" id="exampleInputNumber1" aria-describedby="emailHelp" placeholder="Your number">
             </div>
+
+            <div class="mb-5">
+              <label for="exampleFormControlTextarea1" class="form-label">LEAVE A MESSAGE</label>
+              <textarea class="form-control p-tb-12 border-radius-10" id="exampleFormControlTextarea1" rows="3" placeholder="Please type your message here..."></textarea>
+            </div>
+
+            
 
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
@@ -183,6 +190,11 @@ ul a {
   width: 50%;
 }
 
+.p-tb-12 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
 .pt-21 {
   padding-top: 21px;
 }
@@ -234,6 +246,19 @@ ul a {
   background-color: transparent;
   border: none;
   margin-left: -20px;
+}
+
+form label {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.border-radius-10 {
+  border-radius: 10px;
+}
+
+textarea {
+  height: 150px;
 }
 
 </style>
