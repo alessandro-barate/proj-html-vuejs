@@ -4,6 +4,7 @@ import SmartComponent from '../components/SmartComponent.vue';
 import Countercomp from '../components/countercomp.vue';
 import FeaturedHome from '../components/FeaturedHome.vue';
 import ProcessHome from '../components/ProcessHome.vue';
+import AppStorytelling from '../components/AppStorytelling.vue';
 export default {
   name: "AppHomepage",
   data() {
@@ -39,6 +40,24 @@ export default {
           url: '/img/homepage/work4.png',
           workTitle: 'work4',
         },
+      ],
+      processes: [
+        {
+          processTitle: 'Scripting',
+          url: '/img/homepage/process1.png',
+        },
+        {
+          processTitle: 'Pre-Production',
+          url: '/img/homepage/process2.png',
+        },
+        {
+          processTitle: 'Scripting',
+          url: '/img/homepage/process1.png',
+        },
+        {
+          processTitle: 'Pre-Production',
+          url: '/img/homepage/process2.png',
+        },
       ]
     };
   },
@@ -48,6 +67,7 @@ export default {
     Countercomp,
     FeaturedHome,
     ProcessHome,
+    AppStorytelling,
   }
 };
 </script>
@@ -56,6 +76,7 @@ export default {
   <SmartComponent :cards="cards"></SmartComponent>
   <Countercomp></Countercomp>
   <FeaturedHome :workImgs="workImgs"></FeaturedHome>
-  <ProcessHome></ProcessHome>
+  <ProcessHome :processes="processes"></ProcessHome>
+  <AppStorytelling></AppStorytelling>
 </template>
 <style scoped lang="scss"></style>
