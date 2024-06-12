@@ -97,7 +97,12 @@ export default {
     top: calc(50% - 250px);
     height: 500px;
     width: 500px;
-    z-index: 0;
+    animation: globe1 3s linear infinite;
+    @keyframes globe1 {
+      0% {
+        transform: rotate(360deg);
+      }
+    }
   }
 }
 </style>

@@ -270,6 +270,11 @@ export default {
       padding: 20px;
       border-radius: 20px;
       background-color: #fff5f0;
+      &:hover {
+        .card-image {
+          bottom: 180px;
+        }
+      }
 
       .card-image {
         width: 200px;

@@ -85,12 +85,24 @@ h3 {
     top: 12%;
     left: 9%;
     width: 130px;
+    animation: globe1 1s linear infinite;
+    @keyframes globe1 {
+      0% {
+        transform: rotate(360deg);
+      }
+    }
   }
   .globe2 {
     position: absolute;
     top: 18%;
     right: 28%;
     width: 100px;
+    animation: globe2 0.5s linear infinite;
+    @keyframes globe2 {
+      0% {
+        transform: rotate(360deg);
+      }
+    }
   }
   .globe3 {
     position: absolute;
@@ -105,7 +117,36 @@ h3 {
     bottom: 10%;
     right: 20%;
     max-width: 400px;
+    animation: myfirst 2s linear infinite;
   }
+
+  @keyframes myfirst {
+    0% {
+      right: 20%;
+      bottom: 10%;
+    }
+    20% {
+      right: 16%;
+      bottom: 14%;
+    }
+    40% {
+      right: 18%;
+      bottom: 12%;
+    }
+    60% {
+      right: 18%;
+      bottom: 12%;
+    }
+    80% {
+      right: 16%;
+      bottom: 14%;
+    }
+    100% {
+      right: 20%;
+      bottom: 10%;
+    }
+  }
+
   .ufo {
     position: absolute;
     right: 9%;
