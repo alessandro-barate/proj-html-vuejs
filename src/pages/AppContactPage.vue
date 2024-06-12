@@ -177,11 +177,14 @@ export default {
           </div>
 
           <div class="faq-list mx-auto">
+            <div class="big-image position-relative">
+              <img src="../../public/img/footer/left-man.png" alt="">
+            </div>
             <ul class="main-list">
-              <li class="d-flex justify-content-between" v-for="(faq, index) in faqs">
+              <li class="d-flex justify-content-between mx-auto" v-for="(faq, index) in faqs">
                 <p> {{ faq.question }}</p>
                 <p class="d-inline-flex gap-1 me-3">
-                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                     <i class="fas fa-plus"></i>
                   </button>
                 </p>
@@ -193,23 +196,7 @@ export default {
               </li>
             </ul>
           </div>
-          
         </div>
-
-        <p class="d-inline-flex gap-1">
-  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-    Link with href
-  </a>
-  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-    Button with data-bs-target
-  </button>
-</p>
-<div class="collapse" id="collapseExample">
-  <div class="card card-body">
-    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-  </div>
-</div>
-
       </div>
     </div>
    </section>
@@ -383,6 +370,18 @@ textarea {
 
 .faq-list {
   width: 70%;
+
+  li {
+    width: 80%;
+  }
+}
+
+.big-image img {
+  width: 45%;
+  position: absolute;
+  top:-100px;
+  left: -226px;
+  z-index: -2;
 }
 
 </style>
