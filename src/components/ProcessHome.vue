@@ -1,8 +1,42 @@
 <script>
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 export default {
   name: 'ProcessHome',
-  props: ['processes']
+  data() {
+    return {
+      currentIndex: 0,
+      autoplayInterval: null
+    }
+  },
+  props: ['processes'],
+  computed: {
+    // COMPUTED PER 2 SLIDE VISIBILI
+    visibleImages() {
+      // NEXTINDEX = SLIDE SUCCESSIVA VISIBILE(% PERMETTE DI PRENDERE IL RESTO DELLA DIVISIONE PER RITORNARE A 0)
+      const nextIndex = (this.currentIndex + 1) % this.processes.length;
+      return [this.processes[this.currentIndex], this.processes[nextIndex]];
+    }
+  },
+  methods: {
+    nextSlide() {
+      this.currentIndex = (this.currentIndex + 1) % this.processes.length;
+    },
+    prevSlide() {
+      this.currentIndex = (this.currentIndex - 1 + this.processes.length) % this.processes.length;
+    },
+    // FUNZIONE PER CAMBIARE INDICE NELLO SPAN
+    getSlideIndex(index) {
+      return (this.currentIndex + index) % this.processes.length;
+    },
+    // FUNZIONE AUTOPLAY
+    startAutoplay() {
+      // CAMBIA SLIDE OGNI 1,8 SECONDI
+      this.autoplayInterval = setInterval(this.nextSlide, 1800);
+    },
+  },
+  mounted() {
+    // INIZIA L'AUTOPLAY QUANDO IL COMPONENTE SARA' MONTATO
+    this.startAutoplay();
+  },
 }
 </script>
 <template>
@@ -18,7 +52,8 @@ export default {
           </div>
           <!-- SLIDER -->
           <div class="slider d-flex">
-            <div class="col-6 slide text-center rounded-4 position-relative" v-for="(process, index) in processes">
+            <div class="col-6 slide text-center rounded-4 position-relative" v-for="(process, index) in visibleImages"
+              :key="getSlideIndex(index)">
               <div class="image d-flex align-center justify-content-center rounded-circle mb-3">
                 <img :src="process.url" :alt="process.processTitle">
               </div>
@@ -27,15 +62,15 @@ export default {
                 We'll take your idea and create a technical script which consists of action notes and animation
                 descriptions
               </p>
-              <span class="d-flex align-items-end justify-content-center">{{ index + 1 }}</span>
+              <span class="d-flex align-items-end justify-content-center">{{ getSlideIndex(index) + 1 }}</span>
             </div>
           </div>
           <!-- ARROWS -->
           <div class="arrows text-start mt-3">
-            <button type="button" class="process-prev me-2">
+            <button type="button" class="process-prev me-2" @click="prevSlide">
               <i class="fa-solid fa-arrow-left"></i>
             </button>
-            <button type="button" class="process-next">
+            <button type="button" class="process-next" @click="nextSlide">
               <i class="fa-solid fa-arrow-right"></i>
             </button>
           </div>
