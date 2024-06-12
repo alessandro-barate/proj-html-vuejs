@@ -81,6 +81,9 @@ export default {
     <div class="thumb">
       <img src="/img/homepage/process-thumb.png" alt="process">
     </div>
+    <div class="rocket">
+      <img src="/img/smart4.png" alt="rocket">
+    </div>
   </div>
 </template>
 <style scoped lang="scss">
@@ -182,5 +185,16 @@ button {
   position: absolute;
   top: 60px;
   left: -250px;
+}
+
+.rocket {
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  width: 140px;
+
+  img {
+    height: 140px;
+  }
 }
 </style>
