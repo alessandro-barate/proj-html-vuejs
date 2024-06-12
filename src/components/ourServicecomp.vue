@@ -9,7 +9,7 @@ export default {
 <template>
   <div class="ourservice my-5">
     <div class="container mt-5">
-      <p class="mb-3 text-center">Our Service</p>
+      <p class="name-section mb-3 text-center">Our Service</p>
       <h2 class="title-section mb-1 text-center">
         Animations, Bespoke and Beautiful
       </h2>
@@ -126,6 +126,9 @@ h2.title-section {
 }
 .subtitle-section {
   font-size: 18px;
+}
+.name-section {
+  font-size: 22px;
 }
 .card {
   padding: 20px;
