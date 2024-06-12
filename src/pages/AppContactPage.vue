@@ -26,14 +26,23 @@ export default {
 
 <template>
 
-  <jumbotronComponent :title="Pagename" :Image="jumboImg"/>
+<!-- Section Jumbotron -->
+  <section>
+    <jumbotronComponent :title="Pagename" :Image="jumboImg"/>
+  </section>
+  <!-- FINE Section Jumbotron -->
 
-  <div class="reach-us mx-auto text-center">
-    <h5>Contact Us</h5>
-    <h2>How to Reach Us</h2>
-    <p class="px-5">We're always interested in having a chat or discussing your next big project, so drop us a line!</p>
-  </div>
+  <!-- Section Reach us -->
+  <section>
+    <div class="reach-us mx-auto text-center">
+      <h5>Contact Us</h5>
+      <h2>How to Reach Us</h2>
+      <p class="px-5">We're always interested in having a chat or discussing your next big project, so drop us a line!</p>
+    </div>
+  </section>
+  <!-- FINE Section Reach us -->
 
+  <!-- Section Contact form -->
   <section>
     <div class="container form-contacts"> 
       <div class="row bg-lightpink">
@@ -116,7 +125,25 @@ export default {
       </div> 
     </div>
   </section>
+  <!-- FINE Section Contact form -->
 
+  <!-- Section FAQ -->
+   <section>
+    <div class="faq-container">
+      <div class="row">
+        <div class="col text-center">
+          <div class="col text-center">
+            <h5>We’re Here to Help</h5>
+            <h2 class="width-60 mx-auto my-3">Frequently Asked Questions</h2>
+            <p class="mb-5">We're always interested in having a chat or discussing your next big project, so drop us a line!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+   <!-- FINE Section FAQ -->
+
+  <!-- Section Storytelling -->
   <section class="margin-bt">
     <div class="jumbo-background">
       <img class="p-0" src="../../public/img/footer/shape-top-violet.png" alt="">
@@ -136,6 +163,7 @@ export default {
       <img class="p-0" src="../../public/img/footer/shape-bottom-violet.png" alt="">
     </div>
   </section>
+  <!-- FINE Section Storytelling -->
 </template>
 
 
