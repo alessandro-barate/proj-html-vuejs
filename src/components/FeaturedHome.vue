@@ -16,7 +16,7 @@ export default {
           </p>
         </div>
       </div>
-      <div class="col-6" v-for="workImg in workImgs">
+      <div class="col-6 gy-4" v-for="workImg in workImgs">
         <div class="work">
           <img :src="workImg.url" :alt="workImg.workTitle">
         </div>
@@ -53,6 +53,7 @@ p {
   button {
     font-size: 18px;
     padding: 12px 38px 12px;
+    border-radius: 30px;
   }
 }
 </style>

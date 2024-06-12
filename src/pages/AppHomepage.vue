@@ -3,6 +3,7 @@ import JumboHome from '../components/JumboHome.vue';
 import SmartComponent from '../components/SmartComponent.vue';
 import Countercomp from '../components/countercomp.vue';
 import FeaturedHome from '../components/FeaturedHome.vue';
+import ProcessHome from '../components/ProcessHome.vue';
 export default {
   name: "AppHomepage",
   data() {
@@ -46,6 +47,7 @@ export default {
     SmartComponent,
     Countercomp,
     FeaturedHome,
+    ProcessHome,
   }
 };
 </script>
@@ -54,5 +56,6 @@ export default {
   <SmartComponent :cards="cards"></SmartComponent>
   <Countercomp></Countercomp>
   <FeaturedHome :workImgs="workImgs"></FeaturedHome>
+  <ProcessHome></ProcessHome>
 </template>
 <style scoped lang="scss"></style>
