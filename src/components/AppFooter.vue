@@ -85,7 +85,8 @@ ul li {
 
 }
 
-.lower-part p {
+.lower-part p,
+.list-group-item a {
   font-size: 18px;
 }
 
