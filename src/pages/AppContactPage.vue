@@ -8,6 +8,42 @@ export default {
     return {
       Pagename: "Contact",
       jumboImg: "/img/rocket-banner.png",
+      faqs: [
+        {
+          question: "How do I know what kind of video I need?",
+          answer: "Quisque ultricies enim ac lacus feugiat mattis. In et ipsum sed tellus interdum mattis sit amet id mi. Phasellus nec eros in felis blandit cursus. Nulla facilisi. Nam in purus elit. Aenean tempor volutpat ante.",
+        },
+
+        {
+          question: "Do you currently have career openings?",
+          answer: "Quisque ultricies enim ac lacus feugiat mattis. In et ipsum sed tellus interdum mattis sit amet id mi. Phasellus nec eros in felis blandit cursus. Nulla facilisi. Nam in purus elit. Aenean tempor volutpat ante.",
+        },
+
+        {
+          question: "How long will it take to create an animation video?",
+          answer: "Quisque ultricies enim ac lacus feugiat mattis. In et ipsum sed tellus interdum mattis sit amet id mi. Phasellus nec eros in felis blandit cursus. Nulla facilisi. Nam in purus elit. Aenean tempor volutpat ante.",
+        },
+
+        {
+          question: "How long do you need for the video creation process?",
+          answer: "Quisque ultricies enim ac lacus feugiat mattis. In et ipsum sed tellus interdum mattis sit amet id mi. Phasellus nec eros in felis blandit cursus. Nulla facilisi. Nam in purus elit. Aenean tempor volutpat ante.",
+        },
+
+        {
+          question: "Will I take part in the creation process?",
+          answer: "Quisque ultricies enim ac lacus feugiat mattis. In et ipsum sed tellus interdum mattis sit amet id mi. Phasellus nec eros in felis blandit cursus. Nulla facilisi. Nam in purus elit. Aenean tempor volutpat ante.",
+        },
+
+        {
+          question: "What type/format of animated video can I order?",
+          answer: "Quisque ultricies enim ac lacus feugiat mattis. In et ipsum sed tellus interdum mattis sit amet id mi. Phasellus nec eros in felis blandit cursus. Nulla facilisi. Nam in purus elit. Aenean tempor volutpat ante.",
+        },
+
+        {
+          question: "What if I don't like what you deliver?",
+          answer: "Quisque ultricies enim ac lacus feugiat mattis. In et ipsum sed tellus interdum mattis sit amet id mi. Phasellus nec eros in felis blandit cursus. Nulla facilisi. Nam in purus elit. Aenean tempor volutpat ante.",
+        },
+      ],
     };
   },
 
@@ -21,9 +57,6 @@ export default {
   },
 };
 </script>
-
-
-
 
 
 <template>
@@ -134,15 +167,49 @@ export default {
     <div class="faq-container">
       <div class="row">
         <div class="col text-center">
-          <div class="col width-40 mx-auto text-center">
+          <div class="col width-40 mx-auto text-center position-relative">
             <h5>We’re Here to Help</h5>
             <h2 class="my-3">Frequently Asked Questions</h2>
             <p class="mb-5">We're always interested in having a chat or discussing your next big project, so drop us a line!</p>
+            <div class="circle-container">
+              <img src="../../public/img/footer/big-circle.png" alt="">
+            </div>
           </div>
-          <div class="circle-container">
-            <img src="../../public/img/footer/big-circle.png" alt="">
+
+          <div class="faq-list mx-auto">
+            <ul class="main-list">
+              <li class="d-flex justify-content-between" v-for="(faq, index) in faqs">
+                <p> {{ faq.question }}</p>
+                <p class="d-inline-flex gap-1 me-3">
+                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </p>
+                <div class="collapse" id="collapseExample">
+                  <div class="card card-body">
+                    <p>{{ faq.answer }}</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
+          
         </div>
+
+        <p class="d-inline-flex gap-1">
+  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Link with href
+  </a>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Button with data-bs-target
+  </button>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+  </div>
+</div>
+
       </div>
     </div>
    </section>
@@ -152,9 +219,6 @@ export default {
     <AppStorytelling/>
   <!-- FINE Section Storytelling -->
 </template>
-
-
-
 
 
 <style scoped lang="scss">
@@ -304,6 +368,21 @@ textarea {
 
 .right-side {
   margin-bottom: 80px;
+}
+
+.circle-container img {
+  width: 110%;
+  position: absolute;
+  top: -100px;
+  right: -450px;
+}
+
+.faq-container {
+  margin-top: 120px;
+}
+
+.faq-list {
+  width: 70%;
 }
 
 </style>
