@@ -139,6 +139,9 @@ export default {
             <h2 class="my-3">Frequently Asked Questions</h2>
             <p class="mb-5">We're always interested in having a chat or discussing your next big project, so drop us a line!</p>
           </div>
+          <div class="circle-container">
+            <img src="" alt="">
+          </div>
         </div>
       </div>
     </div>
@@ -156,12 +159,7 @@ export default {
 
 <style scoped lang="scss">
 
-.reach-us {
-  width: 50%;
-  margin-top: 80px;
-  margin-bottom: 80px;
-}
-
+// Tag styles
 h2 {
   font-size: 57px;
   font-weight: 700;
@@ -184,43 +182,8 @@ p {
     font-size: 18px;
 }
 
-.col-6 ul {
-  list-style: none;
-}
 
-ul a {
-  display: block;
-  text-decoration: none;
-  color: black;
-}
-
-.main-list li {
-  width: 90%;
-  background-color: white;
-  padding: 10px 0 10px 20px;
-  margin-bottom: 25px;
-  border-radius: 10px;
-  border: 1px solid #E2DAFA;
-
-}
-
-.bg-lightpink {
-  background-color: #F6E9FC;
-}
-
-.contact-symbol {
-  width: 100px;
-  height: 100px;
-  background-color: #EBE5FF;
-  margin-right: 20px;
-  border-radius: 50%;
-  text-align: center;
-}
-
-.contact-symbol img {
-  width: 50%;
-}
-
+// Spacing styles
 .p-tb-12 {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -240,6 +203,56 @@ ul a {
 
 .width-40 {
   width: 40%;
+}
+
+.border-radius-10 {
+  border-radius: 10px;
+}
+
+
+// Color utility
+.bg-lightpink {
+  background-color: #F6E9FC;
+}
+
+
+// Global styles
+.reach-us {
+  width: 50%;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.col-6 ul {
+  list-style: none;
+}
+
+ul a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.main-list li {
+  width: 90%;
+  background-color: white;
+  padding: 10px 0 10px 20px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  border: 1px solid #E2DAFA;
+}
+
+.contact-symbol {
+  width: 100px;
+  height: 100px;
+  background-color: #EBE5FF;
+  margin-right: 20px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.contact-symbol img {
+  width: 50%;
 }
 
 .left-side {
@@ -282,10 +295,6 @@ ul a {
 form label {
   font-size: 18px;
   font-weight: 600;
-}
-
-.border-radius-10 {
-  border-radius: 10px;
 }
 
 textarea {
