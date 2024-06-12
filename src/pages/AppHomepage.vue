@@ -5,6 +5,7 @@ import Countercomp from '../components/countercomp.vue';
 import FeaturedHome from '../components/FeaturedHome.vue';
 import ProcessHome from '../components/ProcessHome.vue';
 import TeamMemberCarosel from '../components/teamMemberCarosel.vue';
+import ClientsSlider from '../components/clientsSlider.vue';
 import AppStorytelling from '../components/AppStorytelling.vue';
 export default {
   name: "AppHomepage",
@@ -70,6 +71,7 @@ export default {
     ProcessHome,
     TeamMemberCarosel,
     AppStorytelling,
+    ClientsSlider,
   }
 };
 </script>
@@ -80,6 +82,7 @@ export default {
   <FeaturedHome :workImgs="workImgs"></FeaturedHome>
   <ProcessHome :processes="processes"></ProcessHome>
   <TeamMemberCarosel></TeamMemberCarosel>
+  <ClientsSlider></ClientsSlider>
   <AppStorytelling></AppStorytelling>
 </template>
 <style scoped lang="scss"></style>
