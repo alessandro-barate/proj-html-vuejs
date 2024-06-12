@@ -1,6 +1,7 @@
 <script>
 import jumbotronComponent from "../components/jumbotronAboutUs.vue";
 import AppStorytelling from "../components/AppStorytelling.vue";
+import AppSocialsButton from "../components/AppSocialsButton.vue";
 export default {
   name: "AppContactPage",
 
@@ -44,6 +45,7 @@ export default {
           answer: "Quisque ultricies enim ac lacus feugiat mattis. In et ipsum sed tellus interdum mattis sit amet id mi. Phasellus nec eros in felis blandit cursus. Nulla facilisi. Nam in purus elit. Aenean tempor volutpat ante.",
         },
       ],
+      showParagraph: false,
     };
   },
 
@@ -54,6 +56,7 @@ export default {
   components: {
     jumbotronComponent,
     AppStorytelling,
+    AppSocialsButton,
   },
 };
 </script>
@@ -115,12 +118,9 @@ export default {
 
           <div class="socials-button">
             <h5>Follow us</h5>
-            <ul class="list-group list-group-horizontal">
-              <li class="list-group-item">Fontawesome FB</li>
-              <li class="list-group-item">Fontawesome IG</li>
-              <li class="list-group-item">Fontawesome TW</li>
-              <li class="list-group-item">Fontawesome WA</li>
-            </ul>
+
+            <AppSocialsButton/>
+
           </div>
         </div>
 
@@ -184,12 +184,12 @@ export default {
               <li class="d-flex justify-content-between mx-auto" v-for="(faq, index) in faqs">
                 <p class="question"> {{ faq.question }}</p>
                 <p class="d-inline-flex me-3">
-                  <button class="btn border-plus-btn mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  <button class="border-plus-btn mt-3" type="button">
                     <i class="fas fa-plus"></i>
                   </button>
                 </p>
-                <div class="collapse" id="collapseExample">
-                  <div class="card card-body">
+                <div>
+                  <div>
                     <p>{{ faq.answer }}</p>
                   </div>
                 </div>

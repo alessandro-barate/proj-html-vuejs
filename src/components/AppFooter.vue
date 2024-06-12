@@ -1,7 +1,15 @@
 <script>
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import AppSocialsButton from './AppSocialsButton.vue';
 export default {
-  name: "AppFooter"
+  name: "AppFooter",
+  data() {
+    return {};
+  },
+  components: {
+    AppSocialsButton,
+  },
+  
 }
 </script>
 <template>
@@ -51,23 +59,7 @@ export default {
             <p>Copyright © 2022 <a href="" class="external-site-link">Softivus.</a> All rights reserved.</p>
           </div>
           <div class="col-6 list-social">
-            <ul class="list-group list-group-horizontal justify-content-end">
-              <li class="list-group-item">
-                  <div class="social-container">
-                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                  </div>
-              </li>
-              <li class="list-group-item">
-                  <div class="social-container">
-                    <a href=""><i class="fab fa-twitter"></i></a>
-                  </div>             
-              </li>
-              <li class="list-group-item">  
-                  <div class="social-container">
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                  </div>
-              </li>
-            </ul>
+            <AppSocialsButton class="justify-content-end"/>
           </div>
         </div>
       </div>
@@ -83,7 +75,6 @@ ul {
 
 ul li {
   border: none;
-
 }
 
 .lower-part p,
@@ -100,24 +91,6 @@ ul li {
 
 hr {
   width: 98%;
-}
-
-.social-container{
-  width: 45px;
-  height: 45px;
-  border: 1px solid #D7DAE8;
-  border-radius: 25px;
-  text-align: center;
-  line-height: 45px;
-  transition: all 0.3s;
-
-  &:hover {
-    background-color: #ff7a1f;
-  }
-
-  &:hover i {
-    color: white;
-  }
 }
 
 </style>
