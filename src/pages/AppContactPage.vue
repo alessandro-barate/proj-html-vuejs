@@ -1,5 +1,6 @@
 <script>
 import jumbotronComponent from "../components/jumbotronAboutUs.vue";
+import AppStorytelling from "../components/AppStorytelling.vue";
 export default {
   name: "AppContactPage",
 
@@ -16,6 +17,7 @@ export default {
 
   components: {
     jumbotronComponent,
+    AppStorytelling,
   },
 };
 </script>
@@ -52,7 +54,7 @@ export default {
           <ul class="main-list">
             <li class="d-flex">
               <div class="contact-symbol pt-21">
-                <img id="width-40" src="../../public/img/footer/map.png" alt="">
+                <img class="width-40" src="../../public/img/footer/map.png" alt="">
               </div>
               <a href="">
                 <h5>Address</h5>2464 Royal Ln. Mesa, New Jersey 45463
@@ -132,9 +134,9 @@ export default {
     <div class="faq-container">
       <div class="row">
         <div class="col text-center">
-          <div class="col text-center">
+          <div class="col width-40 mx-auto text-center">
             <h5>We’re Here to Help</h5>
-            <h2 class="width-60 mx-auto my-3">Frequently Asked Questions</h2>
+            <h2 class="my-3">Frequently Asked Questions</h2>
             <p class="mb-5">We're always interested in having a chat or discussing your next big project, so drop us a line!</p>
           </div>
         </div>
@@ -144,25 +146,7 @@ export default {
    <!-- FINE Section FAQ -->
 
   <!-- Section Storytelling -->
-  <section class="margin-bt">
-    <div class="jumbo-background">
-      <img class="p-0" src="../../public/img/footer/shape-top-violet.png" alt="">
-      <div class="container pt-5">
-        <div class="row">     
-          <div class="col text-center">
-            <h5 class="text-orange">We Create New Worlds!</h5>
-            <h2 class="width-60 mx-auto my-3 text-white">Want Tips On Your Storytelling?</h2>
-            <p class="mb-5 text-white">Join our newsletter for tips on how to elevate your brand through storytelling</p>
-          </div>
-          <form class="input-wrapper">
-            <input type="email" class="form-control p-4 border-radius width-60 mx-auto" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
-            <button type="submit" class="border-radius">Submit</button>
-          </form>
-        </div>
-      </div>
-      <img class="p-0" src="../../public/img/footer/shape-bottom-violet.png" alt="">
-    </div>
-  </section>
+    <AppStorytelling/>
   <!-- FINE Section Storytelling -->
 </template>
 
@@ -224,13 +208,13 @@ ul a {
   background-color: #F6E9FC;
 }
 
-.text-orange {
-  color: #FF791F;
-}
+// .text-orange {
+//   color: #FF791F;
+// }
 
-.text-white {
-  color: white;
-}
+// .text-white {
+//   color: white;
+// }
 
 .contact-symbol {
   width: 100px;
@@ -262,13 +246,13 @@ ul a {
   padding-top: 30px;
 }
 
-#width-40 {
+.width-40 {
   width: 40%;
 }
 
-.width-60 {
-  width: 60%;
-}
+// .width-60 {
+//   width: 60%;
+// }
 
 .left-side {
   font-weight: bold;
@@ -316,9 +300,9 @@ form label {
   border-radius: 10px;
 }
 
-.border-radius {
-  border-radius: 50px;
-}
+// .border-radius {
+//   border-radius: 50px;
+// }
 
 textarea {
   height: 150px;
@@ -328,30 +312,30 @@ textarea {
   margin-bottom: 80px;
 }
 
-.input-wrapper {
-  margin-bottom: 90px;
-  position: relative;
+// .input-wrapper {
+//   margin-bottom: 90px;
+//   position: relative;
 
-  button {
-    background-color: #FFDFEC;
-    padding: 12px 30px 12px 30px;
-    font-size: 18px;
-    font-weight: 600;
-    border: none;
-    position: absolute;
-    right: 284px;
-    bottom: 12px;
-  }
+//   button {
+//     background-color: #FFDFEC;
+//     padding: 12px 30px 12px 30px;
+//     font-size: 18px;
+//     font-weight: 600;
+//     border: none;
+//     position: absolute;
+//     right: 284px;
+//     bottom: 12px;
+//   }
   
-}
+// }
 
-.jumbo-background {
-  background-image: url(../../public/img/jumbobackground.png);
-}
+// .jumbo-background {
+//   background-image: url(../../public/img/jumbobackground.png);
+// }
 
-.margin-bt {
-  margin-top: 60px;
-  margin-bottom: 90px;
-}
+// .margin-bt {
+//   margin-top: 60px;
+//   margin-bottom: 90px;
+// }
 
 </style>
