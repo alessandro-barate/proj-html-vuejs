@@ -147,11 +147,15 @@ export default {
               <div class="member-name">Hector Vargas</div>
               <div class="member-work">owner and Creative director</div>
               <div class="member-social">
-                <span>F<font-awesome-icon :icon="['fab', 'twitter']" /></span>
-                <span>I<font-awesome-icon :icon="['fab', 'instagram']" /></span>
-                <span
-                  >T<font-awesome-icon :icon="['fab', 'facebook-f']"
-                /></span>
+                <button type="button" class="social">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </button>
+                <button type="button" class="social">
+                  <i class="fa-brands fa-instagram"></i>
+                </button>
+                <button type="button" class="social">
+                  <i class="fa-brands fa-twitter"></i>
+                </button>
               </div>
             </div>
           </div>
@@ -273,20 +277,26 @@ export default {
       }
       .member-social {
         margin: 0 auto;
-        span {
-          display: inline-flex;
-          justify-content: center;
-          align-items: center;
+        button {
+          border-radius: 50%;
+          text-align: center;
           width: 40px;
-          border: 1px solid black;
           height: 40px;
-          margin: 0 10px;
-          border-radius: 100%;
-          background-color: #fff5f0;
-          color: blue;
+          margin: 0 5px;
+          border: 1px solid #d8dae8;
+          background-color: white;
+
           &:hover {
-            background-color: orange;
-            color: white;
+            background-color: #ff7a1f;
+            border-color: #ff7a1f;
+
+            i {
+              color: white;
+            }
+          }
+
+          i {
+            color: #9f9ea1;
           }
         }
       }
