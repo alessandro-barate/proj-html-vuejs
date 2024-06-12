@@ -180,11 +180,11 @@ export default {
             <div class="big-image position-relative">
               <img src="../../public/img/footer/left-man.png" alt="">
             </div>
-            <ul class="main-list">
+            <ul class="faq-ul-list">
               <li class="d-flex justify-content-between mx-auto" v-for="(faq, index) in faqs">
-                <p> {{ faq.question }}</p>
-                <p class="d-inline-flex gap-1 me-3">
-                  <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <p class="question"> {{ faq.question }}</p>
+                <p class="d-inline-flex me-3">
+                  <button class="btn border-plus-btn mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                     <i class="fas fa-plus"></i>
                   </button>
                 </p>
@@ -366,6 +366,7 @@ textarea {
 
 .faq-container {
   margin-top: 120px;
+  margin-bottom: 80px;
 }
 
 .faq-list {
@@ -376,12 +377,34 @@ textarea {
   }
 }
 
+.faq-ul-list li {
+  width: 90%;
+  background-color: white;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 5px 9px 10px 1px rgb(237, 232, 232);
+
+  .question {
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 22px;
+    padding-left: 20px;
+  }
+}
+
 .big-image img {
   width: 45%;
   position: absolute;
   top:-100px;
   left: -226px;
   z-index: -2;
+}
+
+.border-plus-btn {
+  border: 1px solid #BFB4CB;
+  border-radius: 50%;
+  width: 50px;
+  height: 48px;
 }
 
 </style>
