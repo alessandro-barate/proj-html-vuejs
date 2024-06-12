@@ -10,6 +10,8 @@ export default {
   data() {
     return {
       Pagename: "AboutUs",
+      title: "About Us",
+
       jumboImg: "/img/rocket-banner.png",
       cards: [
         {
@@ -42,7 +44,11 @@ export default {
 };
 </script>
 <template>
-  <jumbotronComponent :title="Pagename" :Image="jumboImg"></jumbotronComponent>
+  <jumbotronComponent
+    :name="title"
+    :title="Pagename"
+    :Image="jumboImg"
+  ></jumbotronComponent>
   <smartComponent :cards="cards"></smartComponent>
   <counterComp></counterComp>
   <ourServicecomp></ourServicecomp>

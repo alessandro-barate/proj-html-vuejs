@@ -9,92 +9,82 @@ export default {
         {
           name: "Hector Vargas",
           work: "Owner and Creative director",
-          img: "/img/team2.png",
+          img: "/img/teams/team1.png",
+        },
+        {
+          name: "Robert cooleman",
+          work: "Project lead & administrator",
+          img: "/img/teams/team2.png",
+        },
+        {
+          name: "Thomas Nash",
+          work: "2animator & compositor",
+          img: "/img/teams/team4.png",
+        },
+        {
+          name: "Don Woods",
+          work: "Administrator",
+          img: "/img/teams/team1.png",
+        },
+        {
+          name: "Robert Cooleman",
+          work: "Owner and Creative director",
+          img: "/img/teams/team2.png",
         },
         {
           name: "Hector Vargas",
           work: "Owner and Creative director",
-          img: "/img/team2.png",
+          img: "/img/teams/team1.png",
+        },
+        {
+          name: "Robert cooleman",
+          work: "Project lead & administrator",
+          img: "/img/teams/team2.png",
+        },
+        {
+          name: "Thomas Nash",
+          work: "2animator & compositor",
+          img: "/img/teams/team4.png",
+        },
+        {
+          name: "Don Woods",
+          work: "Administrator",
+          img: "/img/teams/team1.png",
+        },
+        {
+          name: "Robert Cooleman",
+          work: "Owner and Creative director",
+          img: "/img/teams/team2.png",
         },
         {
           name: "Hector Vargas",
           work: "Owner and Creative director",
-          img: "/img/team2.png",
+          img: "/img/teams/team1.png",
         },
         {
-          name: "Hector Vargas",
-          work: "Owner and Creative director",
-          img: "/img/team2.png",
+          name: "Robert cooleman",
+          work: "Project lead & administrator",
+          img: "/img/teams/team2.png",
         },
         {
-          name: "Hector Vargas",
-          work: "Owner and Creative director",
-          img: "/img/team2.png",
+          name: "Thomas Nash",
+          work: "2animator & compositor",
+          img: "/img/teams/team4.png",
         },
         {
-          name: "Hector Vargas",
-          work: "Owner and Creative director",
-          img: "/img/team2.png",
+          name: "Don Woods",
+          work: "Administrator",
+          img: "/img/teams/team1.png",
         },
         {
-          name: "Hector Vargas",
+          name: "Robert Cooleman",
           work: "Owner and Creative director",
-          img: "/img/team2.png",
+          img: "/img/teams/team2.png",
         },
         {
-          name: "Hector Vargas",
-          work: "Owner and Creative director",
-          img: "/img/team2.png",
-        },
-        {
-          name: "Hector Vargas",
-          work: "Owner and Creative director",
-          img: "/img/team2.png",
-        },
-        {
-          name: "Hector Vargas",
-          work: "Owner and Creative director",
-          img: "/img/team2.png",
-        },
-        {
-          name: "Hector Vargas",
-          work: "Owner and Creative director",
-          img: "/img/team2.png",
-        },
-        {
-          name: "Hector Vargas",
-          work: "Owner and Creative director",
-          img: "/img/team2.png",
-        },
-        {
-          name: "Hector Vargas",
-          work: "Owner and Creative director",
-          img: "/img/team2.png",
-        },
-        {
-          name: "Hector Vargas",
-          work: "Owner and Creative director",
-          img: "/img/team2.png",
-        },
-        {
-          name: "Hector Vargas",
-          work: "Owner and Creative director",
-          img: "/img/team2.png",
-        },
-        {
-          name: "Hector Vargas",
-          work: "Owner and Creative director",
-          img: "/img/team2.png",
-        },
-        {
-          name: "Hector Vargas",
-          work: "Owner and Creative director",
-          img: "/img/team2.png",
-        },
-        {
-          name: "Hector Vargas",
-          work: "Owner and Creative director",
-          img: "/img/team2.png",
+          name: "Robert cooleman",
+          work: "Project lead & administrator",
+          img: "/img/teams/team2.png",
         },
       ],
       carouselTranslate: 0,
@@ -102,10 +92,18 @@ export default {
   },
   methods: {
     carouselTranslateIncrement() {
-      this.carouselTranslate += 300;
+      if (this.carouselTranslate >= 0) {
+        this.carouselTranslate = -4800;
+      } else {
+        this.carouselTranslate += 320;
+      }
     },
     carouselTranslateDecrement() {
-      this.carouselTranslate -= 300;
+      if (this.carouselTranslate <= -4800) {
+        this.carouselTranslate = 0;
+      } else {
+        this.carouselTranslate -= 320;
+      }
     },
 
     carouselTranslatefunc() {
@@ -142,10 +140,10 @@ export default {
           <div class="col" v-for="member in teams">
             <div class="card">
               <div class="card-image">
-                <img src="/img/team2.png" alt="" />
+                <img :src="member.img" alt="" />
               </div>
-              <div class="member-name">Hector Vargas</div>
-              <div class="member-work">owner and Creative director</div>
+              <div class="member-name">{{ member.name }}</div>
+              <div class="member-work">{{ member.work }}</div>
               <div class="member-social">
                 <button type="button" class="social">
                   <i class="fa-brands fa-facebook-f"></i>
@@ -237,20 +235,22 @@ export default {
     position: relative;
   }
   .teams-slider {
-    margin-top: 100px;
-    overflow: scroll;
+    margin-top: 30px;
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
     overflow-x: hidden;
     .row-slider {
       display: flex;
       height: 350px;
-      width: max-content;
+      width: 5000px;
 
       transition: 0.6s;
     }
 
     .card {
       width: 290px;
-      margin: 0 10px;
+      margin: 0 15px;
       height: 350px;
       padding: 20px;
       border-radius: 20px;

@@ -5,14 +5,14 @@ export default {
     return {};
   },
   components: {},
-  props: { title: String, Image: String },
+  props: { title: String, Image: String, name: String },
 };
 </script>
 <template>
   <div class="jumbotron position-relative">
     <div class="container">
       <div class="row">
-        <h1 class="z-2 fw-bold mt-5">{{ title }}</h1>
+        <h1 class="z-2 fw-bold mt-5">{{ name }}</h1>
         <h3 class="z-2">
           <router-link :to="{ name: 'Home' }" class="fw-bold linkheader">
             Home
@@ -20,7 +20,7 @@ export default {
           <i class="fas fa-arrow-right-long"></i>
 
           <router-link :to="{ name: title }" class="fw-bold linkheader">
-            {{ title }}
+            {{ name }}
           </router-link>
         </h3>
       </div>
@@ -48,7 +48,6 @@ export default {
   </div>
 </template>
 <style scoped lang="scss">
-
 h1 {
   font-size: 76px;
   font-weight: 700;
