@@ -17,7 +17,7 @@ export default {
           <router-link :to="{ name: 'Home' }" class="fw-bold linkheader">
             Home
           </router-link>
-          &RightArrowBar;
+          <i class="fas fa-arrow-right-long"></i>
 
           <router-link :to="{ name: title }" class="fw-bold linkheader">
             {{ title }}
@@ -48,6 +48,16 @@ export default {
   </div>
 </template>
 <style scoped lang="scss">
+
+h1 {
+  font-size: 76px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 18px;
+}
+
 .linkheader {
   text-decoration: none;
   color: white;

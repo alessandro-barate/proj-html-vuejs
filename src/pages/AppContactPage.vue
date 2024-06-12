@@ -54,7 +54,7 @@ export default {
           <ul class="main-list">
             <li class="d-flex">
               <div class="contact-symbol pt-21">
-                <img class="width-40" src="../../public/img/footer/map.png" alt="">
+                <img id="width-40-map" src="../../public/img/footer/map.png" alt="">
               </div>
               <a href="">
                 <h5>Address</h5>2464 Royal Ln. Mesa, New Jersey 45463
@@ -140,7 +140,7 @@ export default {
             <p class="mb-5">We're always interested in having a chat or discussing your next big project, so drop us a line!</p>
           </div>
           <div class="circle-container">
-            <img src="" alt="">
+            <img src="../../public/img/footer/big-circle.png" alt="">
           </div>
         </div>
       </div>
@@ -201,7 +201,8 @@ p {
   padding-top: 30px;
 }
 
-.width-40 {
+.width-40,
+#width-40-map {
   width: 40%;
 }
 
