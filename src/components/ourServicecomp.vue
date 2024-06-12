@@ -9,11 +9,9 @@ export default {
 <template>
   <div class="ourservice my-5">
     <div class="container mt-5">
-      <p class="name-section mb-3 text-center">Our Service</p>
-      <h2 class="title-section mb-1 text-center">
-        Animations, Bespoke and Beautiful
-      </h2>
-      <p class="subtitle-section text-center mb-3">
+      <h5 class="mb-3 text-center">Our Service</h5>
+      <h2 class="mb-1 text-center">Animations, Bespoke and Beautiful</h2>
+      <p class="mb-3 text-center">
         With the magic of imagination we are able to tell stories, animate
         adventures, create art,
       </p>
@@ -101,6 +99,22 @@ export default {
   </div>
 </template>
 <style scoped lang="scss">
+h2 {
+  font-size: 57px;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 24px;
+  padding-top: 20px;
+  line-height: 25px;
+  font-weight: bold;
+  color: #4d36dc;
+}
+
+p {
+  font-size: 18px;
+}
 .card-image {
   width: 140px;
   height: 140px;
@@ -118,18 +132,11 @@ export default {
 .card-body {
   text-align: center;
 }
-h2.title-section {
-  font-size: 54px;
-}
+
 .card-text {
   font-size: 18px;
 }
-.subtitle-section {
-  font-size: 18px;
-}
-.name-section {
-  font-size: 22px;
-}
+
 .card {
   padding: 20px;
   box-shadow: 0px 8px 18px 0px rgba(48, 5, 108, 0.05);

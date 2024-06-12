@@ -78,9 +78,10 @@ export default {
   position: relative;
   overflow: hidden;
   background-image: url(/img/counter-bg.png);
-  h2.counter-title {
+  h2 {
     text-align: center;
-    font-size: 70px;
+    font-size: 57px;
+    font-weight: 700;
     color: white;
     position: relative;
     z-index: 2;

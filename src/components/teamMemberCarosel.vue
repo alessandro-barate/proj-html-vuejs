@@ -87,34 +87,45 @@ export default {
           img: "/img/teams/team2.png",
         },
       ],
+      carouselTransition: 0.6,
       carouselTranslate: 0,
     };
   },
   methods: {
     carouselTranslateIncrement() {
       if (this.carouselTranslate >= 0) {
-        this.carouselTranslate = -4800;
+        this.carouselTransition = 0;
+        this.carouselTranslate = -3840;
       } else {
         this.carouselTranslate += 320;
+        this.carouselTransition = 0.6;
       }
     },
     carouselTranslateDecrement() {
-      if (this.carouselTranslate <= -4800) {
+      if (this.carouselTranslate <= -3840) {
+        this.carouselTransition = 0;
         this.carouselTranslate = 0;
       } else {
         this.carouselTranslate -= 320;
+        this.carouselTransition = 0.6;
       }
     },
 
     carouselTranslatefunc() {
-      return `transform: translate3d(${this.carouselTranslate}px, 0px, 0px);`;
+      return `transform: translate3d(${this.carouselTranslate}px, 0px, 0px); transition: ${this.carouselTransition}s;`;
+    },
+    startAutoplay() {
+      // CAMBIA SLIDE OGNI 1,8 SECONDI
+      this.autoplayInterval = setInterval(
+        this.carouselTranslateDecrement,
+        1800
+      );
     },
   },
-  components: {},
+
   mounted() {
-    setInterval(function () {
-      this.carouselTranslate -= 300;
-    }, 2000);
+    // INIZIA L'AUTOPLAY QUANDO IL COMPONENTE SARA' MONTATO
+    this.startAutoplay();
   },
 };
 </script>
@@ -127,11 +138,9 @@ export default {
       <img src="/public/img/ball2carousel.png" alt="" />
     </div>
     <div class="container">
-      <p class="name-section mb-3 text-center">Anidio Magic Team Member</p>
-      <h2 class="title-section mb-1 text-center">
-        Let Us Animate Your Project
-      </h2>
-      <p class="subtitle-section text-center mb-3">
+      <h5 class="mb-3 text-center">Anidio Magic Team Member</h5>
+      <h2 class="mb-1 text-center">Let Us Animate Your Project</h2>
+      <p class="mb-3 text-center">
         We create new worlds! Let’s collaborate and create engaging, effective,
         award-winning animations
       </p>
@@ -195,15 +204,23 @@ export default {
     }
   }
 
-  h2.title-section {
-    font-size: 54px;
+  h2 {
+    font-size: 57px;
+    font-weight: 700;
   }
-  .subtitle-section {
+
+  h5 {
+    font-size: 24px;
+    padding-top: 20px;
+    line-height: 25px;
+    font-weight: bold;
+    color: #4d36dc;
+  }
+
+  p {
     font-size: 18px;
   }
-  .name-section {
-    font-size: 22px;
-  }
+
   .buttonsSlider {
     z-index: 900;
     width: 50%;
@@ -244,8 +261,6 @@ export default {
       display: flex;
       height: 350px;
       width: 5000px;
-
-      transition: 0.6s;
     }
 
     .card {

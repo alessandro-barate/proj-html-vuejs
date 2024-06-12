@@ -5,6 +5,8 @@ import ourServicecomp from "../components/ourServicecomp.vue";
 import smartComponent from "../components/SmartComponent.vue";
 import storyTelling from "../components/AppStorytelling.vue";
 import teamMemberCarosel from "../components/teamMemberCarosel.vue";
+import clientsSlider from "../components/clientsSlider.vue";
+
 export default {
   name: "AppAboutUs",
   data() {
@@ -39,6 +41,7 @@ export default {
     smartComponent,
     storyTelling,
     teamMemberCarosel,
+    clientsSlider,
   },
   methods: {},
 };
@@ -53,6 +56,7 @@ export default {
   <counterComp></counterComp>
   <ourServicecomp></ourServicecomp>
   <teamMemberCarosel></teamMemberCarosel>
+  <clientsSlider></clientsSlider>
   <storyTelling></storyTelling>
 </template>
 <style scoped lang="scss"></style>
