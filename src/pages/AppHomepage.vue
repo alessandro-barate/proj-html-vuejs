@@ -4,6 +4,7 @@ import SmartComponent from '../components/SmartComponent.vue';
 import Countercomp from '../components/countercomp.vue';
 import FeaturedHome from '../components/FeaturedHome.vue';
 import ProcessHome from '../components/ProcessHome.vue';
+import TeamMemberCarosel from '../components/teamMemberCarosel.vue';
 import AppStorytelling from '../components/AppStorytelling.vue';
 export default {
   name: "AppHomepage",
@@ -67,6 +68,7 @@ export default {
     Countercomp,
     FeaturedHome,
     ProcessHome,
+    TeamMemberCarosel,
     AppStorytelling,
   }
 };
@@ -77,6 +79,7 @@ export default {
   <Countercomp></Countercomp>
   <FeaturedHome :workImgs="workImgs"></FeaturedHome>
   <ProcessHome :processes="processes"></ProcessHome>
+  <TeamMemberCarosel></TeamMemberCarosel>
   <AppStorytelling></AppStorytelling>
 </template>
 <style scoped lang="scss"></style>
