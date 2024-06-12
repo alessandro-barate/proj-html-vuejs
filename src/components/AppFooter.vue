@@ -16,22 +16,22 @@ export default {
             <ul class="list-group list-group-horizontal justify-content-end">
               <li class="list-group-item">
                 <router-link :to="{ name: 'Home' }" class="">
-                    Homepage
+                  About Us
                 </router-link>
               </li>
               <li class="list-group-item">
                 <router-link :to="{ name: 'AboutUs' }" class="">
-                  About Us
+                  Portfolio
                 </router-link>
               </li>
               <li class="list-group-item">
                 <router-link :to="{ name: 'Contact' }" class="">
-                  Contact
+                  Pricing
                 </router-link>
               </li>
               <li class="list-group-item">
                 <router-link :to="{ name: 'AboutUs' }" class="">
-                  About Us
+                  Career
                 </router-link>
               </li>
               <li class="list-group-item">
@@ -89,7 +89,8 @@ ul li {
   font-size: 18px;
 }
 
-.external-site-link {
+.external-site-link,
+.list-group-item a {
   font-weight: bold;
   color: black;
   text-decoration: none;
