@@ -31,6 +31,22 @@ export default {
 </template>
 <style scoped lang="scss">
 
+h2 {
+  font-size: 57px;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 24px;
+  padding-top: 20px;
+  line-height: 25px;
+  font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+}
+
 .margin-bt {
   margin-top: 60px;
   margin-bottom: 90px;

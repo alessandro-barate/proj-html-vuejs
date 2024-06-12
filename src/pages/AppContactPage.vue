@@ -208,14 +208,6 @@ ul a {
   background-color: #F6E9FC;
 }
 
-// .text-orange {
-//   color: #FF791F;
-// }
-
-// .text-white {
-//   color: white;
-// }
-
 .contact-symbol {
   width: 100px;
   height: 100px;
@@ -249,10 +241,6 @@ ul a {
 .width-40 {
   width: 40%;
 }
-
-// .width-60 {
-//   width: 60%;
-// }
 
 .left-side {
   font-weight: bold;
@@ -300,10 +288,6 @@ form label {
   border-radius: 10px;
 }
 
-// .border-radius {
-//   border-radius: 50px;
-// }
-
 textarea {
   height: 150px;
 }
@@ -311,31 +295,5 @@ textarea {
 .right-side {
   margin-bottom: 80px;
 }
-
-// .input-wrapper {
-//   margin-bottom: 90px;
-//   position: relative;
-
-//   button {
-//     background-color: #FFDFEC;
-//     padding: 12px 30px 12px 30px;
-//     font-size: 18px;
-//     font-weight: 600;
-//     border: none;
-//     position: absolute;
-//     right: 284px;
-//     bottom: 12px;
-//   }
-  
-// }
-
-// .jumbo-background {
-//   background-image: url(../../public/img/jumbobackground.png);
-// }
-
-// .margin-bt {
-//   margin-top: 60px;
-//   margin-bottom: 90px;
-// }
 
 </style>
