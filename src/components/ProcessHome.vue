@@ -1,4 +1,5 @@
 <script>
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 export default {
   name: 'ProcessHome',
   props: ['processes']
@@ -6,17 +7,19 @@ export default {
 </script>
 <template>
   <div class="container-fluid position-relative">
-    <div class="container pt-5">
+    <div class="container py-100">
       <div class="row flex-row-reverse">
         <div class="col-6">
+          <!-- TEXT CONTENT -->
           <div class="content">
             <h4>Our Process</h4>
             <h2 class="text-purple">Our Process for Your Animation Production</h2>
             <p class="text-purple">We have an effective process for working on animation</p>
           </div>
+          <!-- SLIDER -->
           <div class="slider d-flex">
             <div class="col-6 slide text-center rounded-4 position-relative" v-for="(process, index) in processes">
-              <div class="image d-flex align-center justify-content-center rounded-circle">
+              <div class="image d-flex align-center justify-content-center rounded-circle mb-3">
                 <img :src="process.url" :alt="process.processTitle">
               </div>
               <a href="#" class="text-purple">{{ process.processTitle }}</a>
@@ -27,15 +30,29 @@ export default {
               <span class="d-flex align-items-end justify-content-center">{{ index + 1 }}</span>
             </div>
           </div>
+          <!-- ARROWS -->
+          <div class="arrows text-start mt-3">
+            <button type="button" class="process-prev me-2">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button type="button" class="process-next">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
         </div>
       </div>
     </div>
+    <!-- THUMBNAIL BIG -->
     <div class="thumb">
       <img src="/img/homepage/process-thumb.png" alt="process">
     </div>
   </div>
 </template>
 <style scoped lang="scss">
+.py-100 {
+  padding: 100px 0;
+}
+
 .position-relative {
   position: relative;
 }
@@ -103,10 +120,32 @@ span {
   font-size: 18px;
 }
 
+button {
+  border-radius: 50%;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #d8dae8;
+  background-color: white;
+
+  &:hover {
+    background-color: #ff7a1f;
+    border-color: #ff7a1f;
+
+    i {
+      color: white;
+    }
+  }
+
+  i {
+    color: #9f9ea1;
+  }
+}
+
 .thumb {
   width: 900px;
   position: absolute;
-  top: 0;
+  top: 60px;
   left: -250px;
 }
 </style>
