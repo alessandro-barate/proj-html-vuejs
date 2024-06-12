@@ -8,7 +8,8 @@ export default {
   data() {
     return {
       Pagename: "Contact",
-      jumboImg: "/img/rocket-banner.png",
+      title: "Contact",
+      jumboImg: "/img/footer/",
       faqs: [
         {
           question: "How do I know what kind of video I need?",
@@ -45,7 +46,7 @@ export default {
           answer: "Quisque ultricies enim ac lacus feugiat mattis. In et ipsum sed tellus interdum mattis sit amet id mi. Phasellus nec eros in felis blandit cursus. Nulla facilisi. Nam in purus elit. Aenean tempor volutpat ante.",
         },
       ],
-      showParagraph: false,
+      show: false,
     };
   },
 
@@ -58,6 +59,13 @@ export default {
     AppStorytelling,
     AppSocialsButton,
   },
+
+  methods: {
+    showParagraph(){
+      this.show = true;
+      return this.show
+    }
+  }
 };
 </script>
 
@@ -181,16 +189,16 @@ export default {
               <img src="../../public/img/footer/left-man.png" alt="">
             </div>
             <ul class="faq-ul-list">
-              <li class="d-flex justify-content-between mx-auto" v-for="(faq, index) in faqs">
+              <li class="justify-content-between mx-auto" v-for="(faq, index) in faqs">
                 <p class="question"> {{ faq.question }}</p>
                 <p class="d-inline-flex me-3">
-                  <button class="border-plus-btn mt-3" type="button">
+                  <button @click="this.showParagraph" class="border-plus-btn mt-3" type="button">
                     <i class="fas fa-plus"></i>
                   </button>
                 </p>
                 <div>
                   <div>
-                    <p>{{ faq.answer }}</p>
+                    <p class="p-4" v-show="this.show">{{ faq.answer }}</p>
                   </div>
                 </div>
               </li>
