@@ -262,17 +262,20 @@ export default {
               <img src="../../public/img/footer/left-man.png" alt="" />
             </div>
             <ul class="faq-ul-list">
-              <li class="justify-content-between mx-auto" v-for="(faq, index) in faqs" :key="faq.id">
-                <p class="question">{{ faq.question }}</p>
-                <p class="d-inline-flex me-3">
-                  <button @click="show = index" class="border-plus-btn mt-3" type="button">
-                    <i class="fas fa-plus"></i>
-                  </button>
-                </p>
+              <li class="mx-auto" v-for="(faq, index) in faqs" :key="faq.id">
+                <div class="d-flex justify-content-between">
+                  <p class="question">{{ faq.question }}</p>
+                  <p class="d-inline-flex me-3">
+                    <button v-show="show !== index" @click="show = index" class="border-plus-btn mt-3" type="button">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                    <button v-show="show === index" @click="show = null" class="border-plus-btn mt-3" type="button">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                  </p>
+                </div>
                 <div>
-                  <div>
-                    <p class="p-4" v-show="show === index">{{ faq.answer }}</p>
-                  </div>
+                  <p class="p-4" v-show="show === index">{{ faq.answer }}</p>
                 </div>
               </li>
             </ul>
