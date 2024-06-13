@@ -6,11 +6,22 @@ export default {
 <template>
   <!-- CONTAINER 100% PER SFONDO -->
   <div class="container-fluid">
+    <!-- ANIMAZIONE UOMO SINISTRA -->
     <div class="left-man position-absolute">
       <img src="/img/homepage/left-man.png" alt="left-man">
     </div>
-    <div class="globe-1">
-
+    <!-- ANIMAZIONI PIANETI -->
+    <div class="globe-1 position-absolute">
+      <img src="/img/globe1.png" alt="globe1">
+    </div>
+    <div class="globe-2 position-absolute">
+      <img src="/img/globe2.png" alt="globe2">
+    </div>
+    <div class="globe-3 position-absolute">
+      <img src="/img/globe3.png" alt="globe3">
+    </div>
+    <div class="dots-left position-absolute">
+      <img src="/img/dots-left.png" alt="dots-left">
     </div>
     <!-- CONTAINER -->
     <div class="container pt-5">
@@ -57,13 +68,43 @@ export default {
   }
 }
 
+.position-absolute {
+  position: absolute;
+}
+
 .left-man {
   top: 20%;
   animation: fly1 3s linear infinite;
 }
 
-.position-absolute {
-  position: absolute;
+@keyframes globe1 {
+  0% {
+    transform: rotate(360deg);
+  }
+}
+
+.globe-1 {
+  width: 130px;
+  left: 9%;
+  animation: globe1 4s linear infinite;
+}
+
+.globe-2 {
+  width: 100px;
+  top: 12%;
+  right: 28%;
+  animation: globe1 4s linear infinite;
+}
+
+.globe-3 {
+  width: 300px;
+  left: 33%;
+  top: -15%;
+}
+
+.dots-left {
+  left: 5%;
+  max-width: 550px;
 }
 
 h1 {
