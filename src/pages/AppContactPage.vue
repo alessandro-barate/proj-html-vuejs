@@ -14,6 +14,7 @@ export default {
       title: "Contact",
       jumboImg: "/img/footer/",
       background: "",
+      show: null,
       faqs: [
         {
           question: "How do I know what kind of video I need?",
@@ -125,8 +126,7 @@ export default {
         <img
           class="bg-lightpink p-0"
           src="../../public/img/footer/shape-top.png"
-          alt=""
-        />
+          alt=""/>
         <div class="col-6 left-side">
           <h3>Reach us directly!</h3>
           <ul class="main-list">
@@ -262,23 +262,16 @@ export default {
               <img src="../../public/img/footer/left-man.png" alt="" />
             </div>
             <ul class="faq-ul-list">
-              <li
-                class="justify-content-between mx-auto"
-                v-for="(faq, index) in faqs"
-              >
+              <li class="justify-content-between mx-auto" v-for="(faq, index) in faqs" :key="faq.id">
                 <p class="question">{{ faq.question }}</p>
                 <p class="d-inline-flex me-3">
-                  <button
-                    @click="this.showParagraph"
-                    class="border-plus-btn mt-3"
-                    type="button"
-                  >
+                  <button @click="show = index" class="border-plus-btn mt-3" type="button">
                     <i class="fas fa-plus"></i>
                   </button>
                 </p>
                 <div>
                   <div>
-                    <p class="p-4" v-show="this.show">{{ faq.answer }}</p>
+                    <p class="p-4" v-show="show === index">{{ faq.answer }}</p>
                   </div>
                 </div>
               </li>
