@@ -79,7 +79,6 @@ h3 {
 }
 .dots-right {
   height: 400px;
-
   background-image: url(/img/dots-right.png);
 }
 .jumbotron {

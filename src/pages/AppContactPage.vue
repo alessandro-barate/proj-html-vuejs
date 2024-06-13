@@ -12,8 +12,7 @@ export default {
       store,
       Pagename: "Contact",
       title: "Contact",
-      jumboImg: "/img/footer/",
-      background: "",
+      background: "/img/banner-bg3.png",
       show: null,
       faqs: [
         {
@@ -102,7 +101,7 @@ export default {
 <template>
   <!-- Section Jumbotron -->
   <section>
-    <jumbotronComponent :title="Pagename" :Image="jumboImg" />
+    <jumbotronComponent :title="Pagename" :background="background" />
   </section>
   <!-- FINE Section Jumbotron -->
 
