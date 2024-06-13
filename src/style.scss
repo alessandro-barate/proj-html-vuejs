@@ -5,3 +5,19 @@
 @import "./assets/styles/partials/variables";
 @import "./assets/styles/partials/mixin";
 @import "./assets/styles/partials/common";
+.buttonUp {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: #260262;
+  border: none;
+  border-radius: 10px;
+  z-index: 30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+}

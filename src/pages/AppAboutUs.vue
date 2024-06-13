@@ -6,6 +6,8 @@ import smartComponent from "../components/SmartComponent.vue";
 import storyTelling from "../components/AppStorytelling.vue";
 import teamMemberCarosel from "../components/teamMemberCarosel.vue";
 import clientsSlider from "../components/clientsSlider.vue";
+import { store } from "../store";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 export default {
   name: "AppAboutUs",
@@ -30,6 +32,7 @@ export default {
           img: "/img/smart3.png",
         },
       ],
+      store,
     };
   },
   props: {
@@ -44,7 +47,26 @@ export default {
     teamMemberCarosel,
     clientsSlider,
   },
-  methods: {},
+  created() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  unmounted() {
+    window.removeEventListener("scroll", this.handleScroll);
+  },
+  methods: {
+    handleScroll(event) {
+      if (window.scrollY > 300) {
+        store.scroll = true;
+      }
+      if (window.scrollY < 300) {
+        store.scroll = false;
+      }
+    },
+    goPageStart() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      console.log("click up");
+    },
+  },
 };
 </script>
 <template>
@@ -60,5 +82,8 @@ export default {
   <teamMemberCarosel></teamMemberCarosel>
   <clientsSlider></clientsSlider>
   <storyTelling></storyTelling>
+  <button class="buttonUp" @click="goPageStart()" v-if="store.scroll">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
 </template>
 <style scoped lang="scss"></style>

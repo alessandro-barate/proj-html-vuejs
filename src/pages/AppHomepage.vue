@@ -7,10 +7,13 @@ import ProcessHome from "../components/ProcessHome.vue";
 import TeamMemberCarosel from "../components/teamMemberCarosel.vue";
 import ClientsSlider from "../components/clientsSlider.vue";
 import AppStorytelling from "../components/AppStorytelling.vue";
+import { store } from "../store";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 export default {
   name: "AppHomepage",
   data() {
     return {
+      store,
       cards: [
         {
           title: "3D modeling",
@@ -73,6 +76,26 @@ export default {
     AppStorytelling,
     ClientsSlider,
   },
+  created() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  unmounted() {
+    window.removeEventListener("scroll", this.handleScroll);
+  },
+  methods: {
+    handleScroll(event) {
+      if (window.scrollY > 300) {
+        store.scroll = true;
+      }
+      if (window.scrollY < 300) {
+        store.scroll = false;
+      }
+    },
+    goPageStart() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      console.log("click up");
+    },
+  },
 };
 </script>
 
@@ -85,5 +108,8 @@ export default {
   <TeamMemberCarosel></TeamMemberCarosel>
   <ClientsSlider></ClientsSlider>
   <AppStorytelling></AppStorytelling>
+  <button class="buttonUp" @click="goPageStart()" v-if="store.scroll">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
 </template>
 <style scoped lang="scss"></style>

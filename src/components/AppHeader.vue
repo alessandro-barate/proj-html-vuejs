@@ -1,14 +1,18 @@
 <script>
+import { store } from "../store";
 export default {
   name: "AppHeader",
   data() {
-    return {};
+    return { store };
   },
   props: {},
 };
 </script>
 <template>
-  <header class="py-3 bg-invisible position-fixed z-3 start-0 end-0">
+  <header
+    class="py-3 bg-invisible position-fixed z-3 start-0 end-0"
+    :class="{ bg: store.scroll }"
+  >
     <nav class="navbar">
       <div class="container">
         <a class="navbar-brand" href="#">
@@ -65,7 +69,7 @@ export default {
 .bg-invisible {
   background-color: transparent;
 }
-.bg-invisible.bgheadercolor {
+.bg {
   background-color: #260262;
 }
 .linkheader {
