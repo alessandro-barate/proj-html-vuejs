@@ -4,20 +4,31 @@ export default {
 };
 </script>
 <template>
+  <!-- CONTAINER 100% PER SFONDO -->
   <div class="container-fluid">
-    <div class="container">
+    <div class="left-man position-absolute">
+      <img src="/img/homepage/left-man.png" alt="left-man">
+    </div>
+    <div class="globe-1">
+
+    </div>
+    <!-- CONTAINER -->
+    <div class="container pt-5">
       <div class="row">
         <div class="col">
           <div class="content text-center text-white">
+            <!-- TITOLI -->
             <h3 class="text-orange">Imagine, Create, Experience</h3>
             <h1 class="page-title">We Animate <br>With Ninja-Like Precision</h1>
             <h4>We are a character-driven animation studio striving to make high-quality animations.</h4>
             <div class="banner py-5">
+              <!-- BOTTONI -->
               <button type="button" class="btn btn-light rounded-pill me-3">Start a Project</button>
               <button type="button" class="btn btn-dark rounded-pill me-5">Portfolio</button>
             </div>
           </div>
         </div>
+        <!-- THUMBNAIL -->
         <div class="thumb text-center">
           <img src="/img/homepage/middle.png" alt="middle">
         </div>
@@ -29,6 +40,34 @@ export default {
 .container-fluid {
   background-image: url(/img/homepage/banner-bg.png);
   padding-top: 100px;
+  position: relative;
+}
+
+@keyframes fly1 {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.left-man {
+  top: 20%;
+  animation: fly1 3s linear infinite;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+h1 {
+  font-weight: 700;
 }
 
 .text-orange {

@@ -9,6 +9,7 @@ export default {
     <div class="row">
       <div class="col-12">
         <div class="content text-center">
+          <!-- TITOLI -->
           <h4>Our Works</h4>
           <h2 class="text-purple">Featured Productions</h2>
           <p class="text-purple">Here's just a small sample of some of those projects that we're quite proud of. <br>If
@@ -16,12 +17,14 @@ export default {
           </p>
         </div>
       </div>
+      <!-- IMMAGINI DINAMICHE -->
       <div class="col-6 gy-4" v-for="workImg in workImgs">
         <div class="work">
           <img :src="workImg.url" :alt="workImg.workTitle">
         </div>
       </div>
     </div>
+    <!-- BOTTONE -->
     <div class="work-btn text-center mt-4">
       <button type="button" class="btn btn-light text-purple">See Our Work</button>
     </div>
