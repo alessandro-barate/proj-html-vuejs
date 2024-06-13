@@ -10,6 +10,7 @@ export default {
       Pagename: "Contact",
       title: "Contact",
       jumboImg: "/img/footer/",
+      background: "",
       faqs: [
         {
           question: "How do I know what kind of video I need?",
