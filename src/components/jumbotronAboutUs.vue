@@ -160,6 +160,11 @@ h3 {
   }
 
   .ufo {
+    position: absolute;
+    right: 9%;
+    top: 10%;
+    z-index: 1;
+    animation: lightopen 2s linear infinte;
     @keyframes lightopen {
     50% {
       transform: rotate(10deg);
@@ -169,12 +174,6 @@ h3 {
       transform: rotate(0deg);
     }
   }
-    position: absolute;
-    right: 9%;
-    top: 10%;
-    z-index: 1;
-    animation: lightopen 2s linear infinte;
-    
   }
 }
 </style>
