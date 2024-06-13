@@ -174,6 +174,7 @@ p {
   margin-top: -200px;
 
   .video-link {
+    transform: translate(-50%, -50%);
     background-color: #a616ea;
     padding: 35px;
     border-radius: 50%;
