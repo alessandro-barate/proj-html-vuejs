@@ -8,7 +8,6 @@ import TeamMemberCarosel from "../components/teamMemberCarosel.vue";
 import ClientsSlider from "../components/clientsSlider.vue";
 import AppStorytelling from "../components/AppStorytelling.vue";
 import { store } from "../store";
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 export default {
   name: "AppHomepage",
   data() {
