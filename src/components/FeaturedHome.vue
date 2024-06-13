@@ -18,9 +18,12 @@ export default {
         </div>
       </div>
       <!-- IMMAGINI DINAMICHE -->
-      <div class="col-6 gy-4" v-for="workImg in workImgs">
+      <div class="col-6 gy-4 position-relative" v-for="workImg in workImgs">
         <div class="work">
           <img :src="workImg.url" :alt="workImg.workTitle">
+          <a href="#" class="video-link position-absolute top-50 end-50 z-1">
+            <i class="fas fa-play position-absolute"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -50,6 +53,27 @@ h2 {
 
 p {
   font-size: 18px;
+}
+
+.video-link {
+  display: none;
+}
+
+.work:hover {
+
+  .video-link {
+    transform: translate(-50%, -50%);
+    display: block;
+    background-color: white;
+    padding: 35px;
+    border-radius: 50%;
+  }
+
+  i {
+    transform: translate(-50%, -50%);
+    color: #ff7a1f;
+    font-size: 26px;
+  }
 }
 
 .work-btn {

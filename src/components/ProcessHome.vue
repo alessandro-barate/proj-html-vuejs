@@ -177,6 +177,11 @@ button {
   position: absolute;
   top: 60px;
   left: -250px;
+  transition: all 0.5s;
+
+  &:hover {
+    transform: translateX(20px);
+  }
 }
 
 .rocket {
