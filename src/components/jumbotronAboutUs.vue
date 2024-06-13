@@ -160,6 +160,11 @@ h3 {
     right: 9%;
     top: 10%;
     z-index: 1;
+    @keyframes ufo {
+      0% {
+        transform: rotate(360deg);
+      }
+    }
   }
 }
 </style>

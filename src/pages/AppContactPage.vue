@@ -61,9 +61,9 @@ export default {
     };
   },
 
-  props: {
-    title1: String,
-  },
+  // props: {
+  //   title: String,
+  // },
 
   components: {
     jumbotronComponent,
@@ -101,7 +101,7 @@ export default {
 <template>
   <!-- Section Jumbotron -->
   <section>
-    <jumbotronComponent :title="Pagename" :background="background" />
+    <jumbotronComponent :name="Pagename" :title="title" :background="background" />
   </section>
   <!-- FINE Section Jumbotron -->
 
