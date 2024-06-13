@@ -104,5 +104,10 @@ export default {
       }
     }
   }
+  .card {
+    &:hover {
+      transform: rotate(10deg);
+    }
+  }
 }
 </style>

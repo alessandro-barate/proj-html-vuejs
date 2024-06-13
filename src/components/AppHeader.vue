@@ -60,6 +60,7 @@ export default {
               Contact
             </router-link>
           </li>
+          <button class="buttonHeader"><span>Get a quote</span></button>
         </ul>
       </div>
     </nav>
@@ -75,8 +76,46 @@ export default {
 .linkheader {
   text-decoration: none;
   color: white;
+  display: block;
+  align-self: center;
   &:hover {
     color: #ff7a1f;
+  }
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.buttonHeader {
+  border-radius: 100px;
+  font-size: 18px;
+  font-weight: 600;
+  width: 200px;
+  height: 50px;
+  display: inline-block;
+  color: black;
+  border: 1px solid white;
+
+  transition: all 0.5s;
+
+  background-color: transparent;
+
+  span {
+    border-radius: 100px;
+    background-color: transparent;
+    transition: all 0.5s;
+  }
+  &:hover {
+    border: none;
+
+    span {
+      padding: 14px 49px;
+      transition: all 0.2s;
+
+      border-radius: 100px;
+      background-color: #fff;
+    }
   }
 }
 </style>
