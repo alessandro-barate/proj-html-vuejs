@@ -32,9 +32,8 @@ export default {
               class="form-control p-4 border-radius width-60 mx-auto"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
-              placeholder="Enter your email"
-            />
-            <button type="submit" class="border-radius">Submit</button>
+              placeholder="Enter your email"/>
+            <button type="submit" class="border-radius"><span>Submit</span></button>
           </form>
         </div>
       </div>
@@ -89,18 +88,35 @@ p {
   position: relative;
 
   button {
-    background-color: #ffdfec;
     padding: 12px 30px 12px 30px;
+    border-radius: 100px;
     font-size: 18px;
     font-weight: 600;
-    border: none;
+    color: black;
+    transition: all 0.5s;
+    background-color: #ffdfec;
     position: absolute;
     right: 284px;
     bottom: 12px;
+    border: none;
+    transition: all 0.2s;
+
+  &:hover {
+    border: 1px solid #ffdfec;
+    background-color: transparent;
+
+    span {
+      transition: all 0.2s;
+    }
+  }
   }
 }
 
 .border-radius {
   border-radius: 50px;
 }
+
+
+
+    
 </style>
