@@ -93,7 +93,7 @@ h3 {
     top: 12%;
     left: 9%;
     width: 130px;
-    animation: globe1 1s linear infinite;
+    animation: globe1 5s linear infinite;
     @keyframes globe1 {
       0% {
         transform: rotate(360deg);
@@ -105,7 +105,7 @@ h3 {
     top: 18%;
     right: 28%;
     width: 100px;
-    animation: globe2 0.5s linear infinite;
+    animation: globe2 5s linear infinite;
     @keyframes globe2 {
       0% {
         transform: rotate(360deg);

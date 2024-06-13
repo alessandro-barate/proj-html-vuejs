@@ -101,14 +101,14 @@ p {
     border: none;
     transition: all 0.2s;
 
-  &:hover {
-    border: 1px solid #ffdfec;
-    background-color: transparent;
+    &:hover {
+      border: 1px solid #ffdfec;
+      background-color: transparent;
 
-    span {
-      transition: all 0.2s;
+      span {
+        transition: all 0.2s;
+      }
     }
-  }
   }
 }
 
