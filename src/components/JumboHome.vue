@@ -10,7 +10,7 @@ export default {
     <div class="left-man position-absolute">
       <img src="/img/homepage/left-man.png" alt="left-man">
     </div>
-    <div class="right-man position-absolute">
+    <div class="right-man position-absolute end-0">
       <img src="/img/homepage/right-man.png" alt="right-man">
     </div>
     <!-- ANIMAZIONI PIANETI -->
@@ -53,11 +53,15 @@ export default {
           <!-- THUMBNAIL -->
           <div class="thumb position-relative text-center z-2">
             <img src="/img/homepage/middle.png" alt="middle">
+            <a href="#" class="video-link position-absolute top-50 end-50 z-3">
+              <i class="fas fa-play position-absolute"></i>
+            </a>
           </div>
         </div>
       </div>
     </div>
-    <div class="shape-bottom position-absolute">
+    <!-- ONDA INFERIORE -->
+    <div class="shape-bottom position-absolute bottom-0 start-0">
       <img src="/img/homepage/bottom-shape.png" alt="bottom-shape">
     </div>
   </div>
@@ -95,7 +99,6 @@ export default {
 .right-man {
   animation: fly1 4s linear infinite;
   top: 30%;
-  right: 0;
   max-width: 332px;
 }
 
@@ -163,11 +166,24 @@ p {
 
 .text-orange {
   color: #ff7a1f;
+  font-size: 24px;
 }
 
 .thumb {
   transform: translateY(200px);
   margin-top: -200px;
+
+  .video-link {
+    background-color: #a616ea;
+    padding: 35px;
+    border-radius: 50%;
+  }
+
+  i {
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 26px;
+  }
 }
 
 .page-title {
@@ -177,10 +193,5 @@ p {
 button {
   font-size: 18px;
   padding: 12px 38px;
-}
-
-.shape-bottom {
-  bottom: 0;
-  left: 0;
 }
 </style>
