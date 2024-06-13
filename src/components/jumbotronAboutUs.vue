@@ -159,16 +159,22 @@ h3 {
     }
   }
 
+  @keyframes lightopen {
+  50% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
   .ufo {
     position: absolute;
     right: 9%;
     top: 10%;
     z-index: 1;
-    @keyframes ufo {
-      0% {
-        transform: rotate(360deg);
-      }
-    }
+    animation: lightopen 2s linear infinte;
   }
 }
 </style>
