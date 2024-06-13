@@ -12,7 +12,7 @@ export default {
       store,
       Pagename: "Contact",
       title: "Contact",
-      background: "/img/banner-bg3.png",
+      background1: "/img/banner-bg3.png",
       show: null,
       faqs: [
         {
@@ -101,7 +101,7 @@ export default {
 <template>
   <!-- Section Jumbotron -->
   <section>
-    <jumbotronComponent :name="Pagename" :title="title" :background="background" />
+    <jumbotronComponent :name="Pagename" :title="title" :background="background1" />
   </section>
   <!-- FINE Section Jumbotron -->
 
@@ -251,9 +251,7 @@ export default {
               We're always interested in having a chat or discussing your next
               big project, so drop us a line!
             </p>
-            <div class="circle-container">
-              <img src="../../public/img/footer/big-circle.png" alt="" />
-            </div>
+            <img class="circle-image" src="../../public/img/footer/big-circle.png" alt="" />
           </div>
 
           <div class="faq-list mx-auto">
@@ -438,11 +436,12 @@ textarea {
   margin-bottom: 80px;
 }
 
-.circle-container img {
+.circle-image {
   width: 110%;
   position: absolute;
-  top: -100px;
+  top: -90px;
   right: -450px;
+  z-index: -1;
 }
 
 .faq-container {
