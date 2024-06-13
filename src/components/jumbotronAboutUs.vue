@@ -31,8 +31,8 @@ export default {
         </h3>
       </div>
     </div>
-    <div class="dots-left position-absolute start-0 col-50"></div>
-    <div class="dots-right position-absolute end-0 col-50"></div>
+    <div class="dots-left position-absolute top-0 start-0"></div>
+    <div class="dots-right position-absolute top-0 end-0"></div>
     <div class="globe1">
       <img src="/img/globe1.png" alt="" />
     </div>
@@ -71,11 +71,18 @@ h3 {
   }
 }
 .dots-left {
-  height: 400px;
+  height: 100%;
+
+  z-index: 4;
+  width: 50%;
+
   background-image: url(/img/dots-left.png);
 }
 .dots-right {
-  height: 400px;
+  height: 100%;
+  z-index: 4;
+  width: 50%;
+
   background-image: url(/img/dots-right.png);
 }
 .jumbotron {

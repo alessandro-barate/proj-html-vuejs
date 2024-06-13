@@ -10,7 +10,7 @@ export default {
 </script>
 <template>
   <header
-    class="py-3 bg-invisible position-fixed z-3 start-0 end-0"
+    class="py-3 bg-invisible position-fixed start-0 end-0"
     :class="{ bg: store.scroll }"
   >
     <nav class="navbar">
@@ -67,6 +67,9 @@ export default {
   </header>
 </template>
 <style scoped lang="scss">
+header {
+  z-index: 80;
+}
 .bg-invisible {
   background-color: transparent;
 }
