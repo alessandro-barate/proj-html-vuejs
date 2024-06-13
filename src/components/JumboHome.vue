@@ -31,7 +31,7 @@ export default {
       <img src="/img/dots-right.png" alt="dots-right">
     </div>
     <!-- ASTRONAVE -->
-    <div class="light position-absolute">
+    <div class="light position-absolute z-1">
       <img src="/img/light.png" alt="light">
     </div>
 
@@ -51,7 +51,7 @@ export default {
             </div>
           </div>
           <!-- THUMBNAIL -->
-          <div class="thumb position-relative text-center">
+          <div class="thumb position-relative text-center z-2">
             <img src="/img/homepage/middle.png" alt="middle">
           </div>
         </div>
@@ -85,14 +85,6 @@ export default {
   100% {
     transform: translateY(0px);
   }
-}
-
-.position-absolute {
-  position: absolute;
-}
-
-.position-relative {
-  position: relative;
 }
 
 .left-man {
@@ -156,7 +148,6 @@ export default {
 }
 
 .light {
-  z-index: 1;
   top: 10%;
   right: 9%;
   animation: lightopen 2s linear infinite;
@@ -176,7 +167,6 @@ p {
 
 .thumb {
   transform: translateY(200px);
-  z-index: 2;
   margin-top: -200px;
 }
 

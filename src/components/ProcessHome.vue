@@ -91,14 +91,6 @@ export default {
   padding: 100px 0;
 }
 
-.position-relative {
-  position: relative;
-}
-
-.flex-row-reverse {
-  flex-direction: row-reverse;
-}
-
 h4 {
   color: #4d36dc
 }

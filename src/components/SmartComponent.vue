@@ -10,7 +10,7 @@ export default {
       <div class="row">
         <!-- OFFSET PER IMMAGINE -->
         <div class="col-9 offset-3">
-          <div class="position-relative z-index">
+          <div class="position-relative z-1">
             <div class="row">
               <div class="col-9">
                 <div class="content text-center text-white">
@@ -53,12 +53,7 @@ export default {
 </template>
 <style scoped lang="scss">
 .position-relative {
-  position: relative;
   padding: 100px 0;
-}
-
-.z-index {
-  z-index: 1;
 }
 
 h4 {
