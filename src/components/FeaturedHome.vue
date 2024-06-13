@@ -21,7 +21,7 @@ export default {
       <div class="col-6 gy-4 position-relative" v-for="workImg in workImgs">
         <div class="work">
           <img :src="workImg.url" :alt="workImg.workTitle">
-          <a href="#" class="video-link position-absolute top-50 end-50 z-1">
+          <a href="#" class="video-link position-absolute top-50 start-50 z-1">
             <i class="fas fa-play position-absolute"></i>
           </a>
         </div>
