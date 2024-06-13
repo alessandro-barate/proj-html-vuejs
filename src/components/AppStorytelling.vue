@@ -106,6 +106,7 @@ p {
       background-color: transparent;
 
       span {
+        padding: 12px 30px 12px 30px;
         transition: all 0.2s;
       }
     }

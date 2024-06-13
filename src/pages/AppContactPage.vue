@@ -99,6 +99,7 @@ export default {
 </script>
 
 <template>
+  
   <!-- Section Jumbotron -->
   <section>
     <jumbotronComponent :name="Pagename" :title="title" :background="background1" />
@@ -286,9 +287,13 @@ export default {
   <!-- Section Storytelling -->
   <AppStorytelling />
   <!-- FINE Section Storytelling -->
+
+  <!-- Scroll Up Button -->
   <button class="buttonUp" @click="goPageStart()" v-if="store.scroll">
     <i class="fa-solid fa-arrow-up"></i>
   </button>
+  <!-- FINE Scroll Up Button -->
+
 </template>
 
 <style scoped lang="scss">

@@ -98,11 +98,15 @@ header {
   height: 50px;
   display: inline-block;
   color: black;
-  border: 1px solid white;
+  border: none;
 
   transition: all 0.5s;
 
-  background-color: transparent;
+  background-color: #ffdfec;
+
+  &:hover {
+    background-color: transparent;
+  }
 
   span {
     border-radius: 100px;
@@ -117,7 +121,9 @@ header {
       transition: all 0.2s;
 
       border-radius: 100px;
-      background-color: #fff;
+      background-color: transparent;
+      color: white;
+      border: 1px solid white;
     }
   }
 }
