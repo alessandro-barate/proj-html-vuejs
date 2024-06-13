@@ -13,6 +13,7 @@ export default {
     return {
       Pagename: "AboutUs",
       title: "About Us",
+      bacgroundJumbo: "/img/jumbobackground.png",
 
       jumboImg: "/img/rocket-banner.png",
       cards: [
@@ -51,6 +52,7 @@ export default {
     :name="title"
     :title="Pagename"
     :Image="jumboImg"
+    :background="bacgroundJumbo"
   ></jumbotronComponent>
   <smartComponent :cards="cards"></smartComponent>
   <counterComp></counterComp>

@@ -4,12 +4,21 @@ export default {
   data() {
     return {};
   },
+  methods: {
+    backgroundimg() {
+      return `background-image: url(${background});`;
+    },
+  },
+
   components: {},
-  props: { title: String, Image: String, name: String },
+  props: { title: String, Image: String, name: String, background: String },
 };
 </script>
 <template>
-  <div class="jumbotron position-relative">
+  <div
+    class="jumbotron position-relative"
+    style="background-image: url(/img/jumbobackground.png)"
+  >
     <div class="container">
       <div class="row">
         <h1 class="z-2 fw-bold mt-5">{{ name }}</h1>
@@ -77,7 +86,7 @@ h3 {
   color: white;
   width: 100%;
   padding: 135px 0 179px;
-  background-image: url(/img/jumbobackground.png);
+
   background-position: center;
 
   .globe1 {
