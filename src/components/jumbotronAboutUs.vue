@@ -5,8 +5,8 @@ export default {
     return {};
   },
   methods: {
-    backgroundimg() {
-      return `background-image: url(${background});`;
+    backgroundimg(Background) {
+      return `background-image: url(${Background});`;
     },
   },
 
@@ -15,10 +15,7 @@ export default {
 };
 </script>
 <template>
-  <div
-    class="jumbotron position-relative"
-    style="background-image: url(/img/jumbobackground.png)"
-  >
+  <div class="jumbotron position-relative" :style="backgroundimg(background)">
     <div class="container">
       <div class="row">
         <h1 class="z-2 fw-bold mt-5">{{ name }}</h1>
