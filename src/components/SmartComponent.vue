@@ -27,11 +27,11 @@ export default {
             <div class="row mt-3">
               <div class="col-4 text-center" v-for="card in cards">
                 <div class="smart-cards">
-                  <div class="image">
+                  <div class="image mb-2 my-4">
                     <img :src="card.img" :alt="card.title">
                   </div>
                   <a href="#" class="text-purple">{{ card.title }}</a>
-                  <p class="text-purple">We constantly ask questions. It helps us shape your story and deliver the
+                  <p class="text-purple mt-2">We constantly ask questions. It helps us shape your story and deliver the
                     results you crave. Yep,
                     we'll drill deep to deliver above and beyond your expectations.</p>
                 </div>
@@ -65,6 +65,10 @@ h2 {
   font-weight: 700;
 }
 
+p {
+  font-size: 18px;
+}
+
 .text-purple {
   color: #311852;
 }
@@ -74,6 +78,11 @@ h2 {
   border-radius: 10%;
   padding: 1rem;
   border: 1px solid #d8dae8;
+
+  &:hover {
+    border: 1px solid white;
+    background-image: -webkit-linear-gradient(90deg, rgba(1, 5, 48, 0) 0%, rgba(255, 122, 31, 0.10196) 100%);
+  }
 
   img {
     width: 80px;
