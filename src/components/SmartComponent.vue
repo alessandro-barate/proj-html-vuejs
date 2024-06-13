@@ -23,6 +23,7 @@ export default {
                 </div>
               </div>
             </div>
+            <!-- RIGA PER CARD -->
             <div class="row mt-3">
               <div class="col-4 text-center" v-for="card in cards">
                 <div class="smart-cards">
@@ -39,10 +40,12 @@ export default {
           </div>
         </div>
       </div>
+      <!-- CONTAINER IMMAGINE A SINISTRA -->
       <div class="smart-container">
         <img class="smart" src="/img/smart.png" alt="smart">
       </div>
     </div>
+    <!-- RAZZO -->
     <div class="rocket">
       <img src="/img/smart4.png" alt="rocket">
     </div>
